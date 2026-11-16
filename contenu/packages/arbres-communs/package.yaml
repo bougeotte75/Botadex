@@ -1,0 +1,10 @@
+id: arbres-communs
+titre: Arbres communs de Paris
+description: >
+  Les arbres que l'on croise le plus souvent dans les rues et jardins parisiens.
+niveau: debutant
+acces: gratuit
+prerequis: []
+# Liste ordonnée d'identifiants d'espèces (noms de fichiers de contenu/especes/ sans extension).
+# À remplir d'après l'analyse du jeu « Les arbres » (data/processed/).
+especes: []

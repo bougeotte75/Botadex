@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fiche espèce Botadex",
+  "type": "object",
+  "required": ["id", "nom_scientifique", "noms_vernaculaires", "famille", "statut", "sources"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Nom scientifique en kebab-case, identique au nom du fichier" },
+    "nom_scientifique": { "type": "string" },
+    "taxref_id": { "type": ["integer", "null"], "description": "Identifiant TAXREF (INPN)" },
+    "noms_vernaculaires": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "famille": { "type": "string" },
+    "type": { "enum": ["arbre", "arbuste", "herbacee", "grimpante", "autre"] },
+    "statut": { "enum": ["brouillon", "a-verifier", "verifie"] },
+    "milieux_paris": {
+      "type": "array",
+      "items": { "enum": ["alignement", "parc-jardin", "bois", "friche", "trottoir", "berges", "cimetiere", "autre"] }
+    },
+    "phenologie": {
+      "type": "object",
+      "description": "Mois (1-12) pour chaque stade observable",
+      "properties": {
+        "feuillage": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 12 } },
+        "floraison": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 12 } },
+        "fructification": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 12 } }
+      }
+    },
+    "reconnaissance": {
+      "type": "object",
+      "description": "Critères de reconnaissance par stade ou organe. Chaque critère cite ses sources.",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/affirmation" }
+      }
+    },
+    "confusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["espece", "comment_distinguer"],
+        "properties": {
+          "espece": { "type": "string", "description": "id de l'espèce proche" },
+          "comment_distinguer": { "$ref": "#/$defs/affirmation" }
+        }
+      }
+    },
+    "anecdotes": { "type": "array", "items": { "$ref": "#/$defs/affirmation" } },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "auteur", "licence", "usage_commercial"],
+        "properties": {
+          "url": { "type": "string" },
+          "page_source": { "type": "string" },
+          "auteur": { "type": "string" },
+          "licence": { "type": "string" },
+          "usage_commercial": { "type": "boolean" },
+          "stade": { "type": "string" },
+          "organe": { "enum": ["silhouette", "feuille", "ecorce", "fleur", "fruit", "bourgeon", "autre"] }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "affirmation": {
+      "type": "object",
+      "required": ["texte", "sources"],
+      "properties": {
+        "texte": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "string" }, "minItems": 1, "description": "ids de sources de la fiche" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "titre", "url", "licence", "usage_commercial"],
+      "properties": {
+        "id": { "type": "string" },
+        "titre": { "type": "string" },
+        "url": { "type": "string" },
+        "licence": { "type": "string" },
+        "usage_commercial": { "type": "boolean" },
+        "consulte_le": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

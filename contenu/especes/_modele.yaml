@@ -1,0 +1,43 @@
+# Modèle de fiche espèce — copier en <nom-scientifique-en-kebab>.yaml
+# Règle d'or : chaque critère, confusion ou anecdote cite au moins une source (id de la liste « sources »).
+id: genre-espece
+nom_scientifique: Genre espece
+taxref_id: null
+noms_vernaculaires: [Nom courant]
+famille: Famille
+type: arbre
+statut: brouillon          # brouillon | a-verifier | verifie
+milieux_paris: [alignement]
+phenologie:
+  feuillage: []
+  floraison: []
+  fructification: []
+reconnaissance:
+  silhouette: []
+  feuille: []
+  ecorce: []
+  hiver: []
+  # exemple d'entrée :
+  # - texte: "Description du critère"
+  #   sources: [eflore]
+confusions: []
+  # - espece: autre-espece
+  #   comment_distinguer:
+  #     texte: "..."
+  #     sources: [eflore]
+anecdotes: []
+photos: []
+  # - url: https://upload.wikimedia.org/...
+  #   page_source: https://commons.wikimedia.org/wiki/File:...
+  #   auteur: Nom
+  #   licence: CC-BY-SA-4.0
+  #   usage_commercial: true
+  #   stade: été
+  #   organe: feuille
+sources:
+  - id: eflore
+    titre: Tela Botanica — eFlore, fiche de l'espèce
+    url: https://www.tela-botanica.org/
+    licence: à préciser
+    usage_commercial: false
+    consulte_le: 2026-11-16

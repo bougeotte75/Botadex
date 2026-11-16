@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botadex — Carte des arbres de Paris</title>
+<style>
+  :root {
+    --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+    --line: #e1e0d9; --contexte: #c9c8bf; --accent: #008300; --accent-bg: #e3f1e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink2: #c3c2b7; --muted: #898781;
+      --line: #2c2c2a; --contexte: #3a3a37; --accent: #0ca30c; --accent-bg: #1c2e1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--page); color: var(--ink);
+    font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .app { display: grid; grid-template-columns: 320px 1fr; height: 100vh; }
+  aside { border-right: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; min-height: 0; }
+  header { padding: 16px 16px 8px; }
+  h1 { font-size: 17px; margin: 0 0 4px; }
+  .sous-titre { color: var(--ink2); font-size: 13px; margin: 0; }
+  .outils { padding: 8px 16px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--line); }
+  input[type=search] { width: 100%; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--page); color: var(--ink); font: inherit; }
+  .filtres { display: flex; gap: 4px; flex-wrap: wrap; }
+  .filtres button { border: 1px solid var(--line); background: transparent; color: var(--ink2); border-radius: 999px;
+    padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer; }
+  .filtres button.actif { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+  ul { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+  li { display: grid; grid-template-columns: 28px 1fr auto; gap: 6px; align-items: baseline; padding: 6px 16px;
+    cursor: pointer; border-bottom: 1px solid var(--line); }
+  li:hover { background: var(--page); }
+  li.sel { background: var(--accent-bg); }
+  li .rang { color: var(--muted); font-size: 12px; text-align: right; }
+  li .nom { font-weight: 500; }
+  li .latin { color: var(--ink2); font-style: italic; font-size: 12px; display: block; font-weight: 400; }
+  li .n { color: var(--ink2); font-variant-numeric: tabular-nums; font-size: 12px; text-align: right; }
+  li .rar { display: block; font-size: 11px; color: var(--muted); }
+  .especes { grid-column: 2 / 4; margin-top: 4px; font-size: 12px; color: var(--ink2); }
+  .especes div { display: flex; justify-content: space-between; padding: 1px 0; cursor: pointer; }
+  .especes div:hover, .especes div.sel { color: var(--accent); }
+  main { position: relative; min-width: 0; }
+  canvas { position: absolute; inset: 0; width: 100%; height: 100%; cursor: grab; display: block; }
+  canvas.drag { cursor: grabbing; }
+  .info { position: absolute; left: 16px; top: 16px; background: var(--surface); border: 1px solid var(--line);
+    border-radius: 8px; padding: 10px 12px; max-width: 360px; pointer-events: none; }
+  .info .grand { font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .info .legende { display: flex; gap: 12px; margin-top: 6px; font-size: 12px; color: var(--ink2); }
+  .pastille { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+  .bulle { position: absolute; pointer-events: none; background: var(--ink); color: var(--surface); font-size: 12px;
+    padding: 5px 8px; border-radius: 6px; white-space: nowrap; display: none; }
+  .aide { position: absolute; right: 16px; bottom: 16px; color: var(--muted); font-size: 12px; background: var(--surface);
+    padding: 4px 8px; border-radius: 6px; border: 1px solid var(--line); }
+  .chargement { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink2); }
+  .source { padding: 8px 16px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--line); }
+  @media (max-width: 760px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: 45vh 1fr; }
+    aside { order: 2; border-right: 0; border-top: 1px solid var(--line); }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <header>
+      <h1>Les arbres de Paris</h1>
+      <p class="sous-titre">Botadex · exploration du jeu « Les arbres » (Ville de Paris)</p>
+    </header>
+    <div class="outils">
+      <input type="search" id="recherche" placeholder="Chercher un arbre (platane, Tilia…)">
+      <div class="filtres" id="filtres">
+        <button data-r="" class="actif">Tous</button>
+        <button data-r="commune">Communs</button>
+        <button data-r="peu commune">Peu communs</button>
+        <button data-r="rare">Rares</button>
+        <button data-r="tres rare">Très rares</button>
+      </div>
+    </div>
+    <ul id="liste"></ul>
+    <div class="source">Source : Ville de Paris, jeu « Les arbres », opendata.paris.fr (ODbL). Rareté calculée sur la part cumulée des arbres : communs = premiers 80 %, peu communs = jusqu'à 95 %, rares = jusqu'à 99 %, très rares = le reste.</div>
+  </aside>
+  <main>
+    <canvas id="carte"></canvas>
+    <div class="info" id="info"></div>
+    <div class="bulle" id="bulle"></div>
+    <div class="aide">Molette ou pincement : zoom · glisser : déplacer · double-clic : recentrer</div>
+    <div class="chargement" id="chargement">Chargement des 220 000 arbres…</div>
+  </main>
+</div>
+<script>
+const RARETE = { "commune": "commun", "peu commune": "peu commun", "rare": "rare", "tres rare": "très rare" };
+const fmt = n => n.toLocaleString("fr-FR");
+const canvas = document.getElementById("carte"), ctx = canvas.getContext("2d");
+let D, N, genreDe, sel = null; // sel = {type:"genre"|"taxon", i}
+let vue = { cx: 0, cy: 0, k: 1 }; // centre (unités données) et pixels par unité
+const KX = Math.cos(48.86 * Math.PI / 180); // correction de la longitude
+let couleurs = {};
+
+function lireCouleurs() {
+  const s = getComputedStyle(document.documentElement);
+  couleurs = { contexte: s.getPropertyValue("--contexte").trim(), accent: s.getPropertyValue("--accent").trim(),
+               surface: s.getPropertyValue("--surface").trim() };
+}
+
+function recentrer() {
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  for (let i = 0; i < N; i++) { const x = D.x[i] * KX, y = D.y[i];
+    if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  vue = { cx: (x0 + x1) / 2, cy: (y0 + y1) / 2, k: Math.min(w / (x1 - x0), h / (y1 - y0)) * 0.92 };
+}
+
+function estSel(i) {
+  if (!sel) return false;
+  const t = D.t[i];
+  return sel.type === "taxon" ? t === sel.i : genreDe[t] === sel.i;
+}
+
+function dessiner() {
+  const dpr = window.devicePixelRatio || 1, w = canvas.clientWidth, h = canvas.clientHeight;
+  if (canvas.width !== w * dpr || canvas.height !== h * dpr) { canvas.width = w * dpr; canvas.height = h * dpr; }
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.fillStyle = couleurs.surface; ctx.fillRect(0, 0, w, h);
+  const k = vue.k, ox = w / 2 - vue.cx * k, oy = h / 2 + vue.cy * k;
+  const tCtx = Math.max(1, Math.min(3, k * 6)), tSel = Math.max(2.5, Math.min(7, k * 14));
+  ctx.fillStyle = sel ? couleurs.contexte : couleurs.accent;
+  const tBase = sel ? tCtx : Math.max(1.2, Math.min(4, k * 8));
+  for (let i = 0; i < N; i++) {
+    if (sel && estSel(i)) continue;
+    const px = ox + D.x[i] * KX * k, py = oy - D.y[i] * k;
+    if (px < -5 || py < -5 || px > w + 5 || py > h + 5) continue;
+    ctx.fillRect(px - tBase / 2, py - tBase / 2, tBase, tBase);
+  }
+  if (sel) {
+    ctx.fillStyle = couleurs.accent;
+    for (let i = 0; i < N; i++) {
+      if (!estSel(i)) continue;
+      const px = ox + D.x[i] * KX * k, py = oy - D.y[i] * k;
+      if (px < -8 || py < -8 || px > w + 8 || py > h + 8) continue;
+      ctx.beginPath(); ctx.arc(px, py, tSel / 2, 0, 6.2832); ctx.fill();
+    }
+  }
+}
+let enAttente = false;
+function redessiner() { if (!enAttente) { enAttente = true; requestAnimationFrame(() => { enAttente = false; dessiner(); }); } }
+
+function majInfo() {
+  const el = document.getElementById("info");
+  if (!sel) {
+    el.innerHTML = `<div class="grand">${fmt(N)}</div>arbres recensés, ${D.genres.length} genres, ${D.taxons.length} espèces et variétés.<br>Choisis un arbre dans la liste pour le voir sur la carte.`;
+    return;
+  }
+  let nom, latin, n, rar;
+  if (sel.type === "genre") { const g = D.genres[sel.i]; nom = g[1]; latin = g[0]; n = g[2]; rar = g[3]; }
+  else { const t = D.taxons[sel.i]; nom = t[2]; latin = D.genres[t[0]][0] + " " + t[1]; n = t[3]; rar = t[4]; }
+  el.innerHTML = `<div><b>${nom}</b> <i>${latin}</i></div><div class="grand">${fmt(n)}</div>arbres · ${(n / N * 100).toLocaleString("fr-FR", { maximumFractionDigits: 1 })} % du total · ${RARETE[rar]}
+    <div class="legende"><span><span class="pastille" style="background:${couleurs.accent}"></span>${nom}</span><span><span class="pastille" style="background:${couleurs.contexte}"></span>autres arbres</span></div>`;
+}
+
+function construireListe() {
+  const q = document.getElementById("recherche").value.trim().toLowerCase();
+  const r = document.querySelector("#filtres .actif").dataset.r;
+  const ul = document.getElementById("liste"); ul.innerHTML = "";
+  D.genres.forEach((g, gi) => {
+    if (r && g[3] !== r) return;
+    const taxons = D.taxons.map((t, ti) => [t, ti]).filter(([t]) => t[0] === gi);
+    const texte = (g[0] + " " + g[1] + " " + taxons.map(([t]) => t[1] + " " + t[2]).join(" ")).toLowerCase();
+    if (q && !texte.includes(q)) return;
+    const li = document.createElement("li");
+    const gSel = sel && ((sel.type === "genre" && sel.i === gi) || (sel.type === "taxon" && D.taxons[sel.i][0] === gi));
+    if (gSel) li.className = "sel";
+    li.innerHTML = `<span class="rang">${g[4]}</span><span class="nom">${g[1]}<span class="latin">${g[0]}</span></span><span class="n">${fmt(g[2])}<span class="rar">${RARETE[g[3]]}</span></span>`;
+    if (gSel && taxons.length > 1) {
+      const div = document.createElement("div"); div.className = "especes";
+      taxons.slice(0, 15).forEach(([t, ti]) => {
+        const d = document.createElement("div");
+        if (sel.type === "taxon" && sel.i === ti) d.className = "sel";
+        d.innerHTML = `<span><i>${g[0]} ${t[1]}</i></span><span>${fmt(t[3])}</span>`;
+        d.onclick = e => { e.stopPropagation(); choisir({ type: "taxon", i: ti }); };
+        div.appendChild(d);
+      });
+      if (taxons.length > 15) div.insertAdjacentHTML("beforeend", `<div>+ ${taxons.length - 15} autres</div>`);
+      li.appendChild(div);
+    }
+    li.onclick = () => choisir(sel && sel.type === "genre" && sel.i === gi ? null : { type: "genre", i: gi });
+    ul.appendChild(li);
+  });
+}
+
+function choisir(s) { sel = s; construireListe(); majInfo(); redessiner(); }
+
+// Survol : grille spatiale pour trouver l'arbre le plus proche
+let grille = new Map(); const CELL = 100;
+function indexer() {
+  for (let i = 0; i < N; i++) {
+    const c = Math.floor(D.x[i] * KX / CELL) + "," + Math.floor(D.y[i] / CELL);
+    let a = grille.get(c); if (!a) grille.set(c, a = []); a.push(i);
+  }
+}
+function plusProche(mx, my) {
+  const w = canvas.clientWidth, h = canvas.clientHeight, k = vue.k;
+  const ux = (mx - w / 2) / k + vue.cx, uy = (h / 2 - my) / k + vue.cy, r = 8 / k;
+  let best = -1, bd = r * r;
+  const cx0 = Math.floor((ux - r) / CELL), cx1 = Math.floor((ux + r) / CELL), cy0 = Math.floor((uy - r) / CELL), cy1 = Math.floor((uy + r) / CELL);
+  if ((cx1 - cx0) * (cy1 - cy0) > 400) return -1;
+  for (let a = cx0; a <= cx1; a++) for (let b = cy0; b <= cy1; b++) {
+    const l = grille.get(a + "," + b); if (!l) continue;
+    for (const i of l) { const dx = D.x[i] * KX - ux, dy = D.y[i] - uy, d = dx * dx + dy * dy;
+      if (d < bd && (!sel || estSel(i))) { bd = d; best = i; } }
+  }
+  return best;
+}
+
+// Interactions
+let glisse = null;
+canvas.addEventListener("pointerdown", e => { glisse = { x: e.clientX, y: e.clientY, cx: vue.cx, cy: vue.cy }; canvas.classList.add("drag"); canvas.setPointerCapture(e.pointerId); });
+canvas.addEventListener("pointerup", () => { glisse = null; canvas.classList.remove("drag"); });
+canvas.addEventListener("pointermove", e => {
+  const bulle = document.getElementById("bulle");
+  if (glisse) { vue.cx = glisse.cx - (e.clientX - glisse.x) / vue.k; vue.cy = glisse.cy + (e.clientY - glisse.y) / vue.k; bulle.style.display = "none"; redessiner(); return; }
+  const rect = canvas.getBoundingClientRect(), mx = e.clientX - rect.left, my = e.clientY - rect.top;
+  const i = vue.k > 0.15 ? plusProche(mx, my) : -1;
+  if (i < 0) { bulle.style.display = "none"; return; }
+  const t = D.taxons[D.t[i]], g = D.genres[t[0]];
+  bulle.innerHTML = `<b>${t[2]}</b> · <i>${g[0]} ${t[1]}</i>`;
+  bulle.style.display = "block"; bulle.style.left = (mx + 12) + "px"; bulle.style.top = (my + 12) + "px";
+});
+canvas.addEventListener("pointerleave", () => document.getElementById("bulle").style.display = "none");
+canvas.addEventListener("wheel", e => {
+  e.preventDefault();
+  const rect = canvas.getBoundingClientRect(), mx = e.clientX - rect.left, my = e.clientY - rect.top;
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  const ux = (mx - w / 2) / vue.k + vue.cx, uy = (h / 2 - my) / vue.k + vue.cy;
+  const f = Math.exp(-e.deltaY * 0.0015);
+  vue.k = Math.max(0.005, Math.min(5, vue.k * f));
+  vue.cx = ux - (mx - w / 2) / vue.k; vue.cy = uy - (h / 2 - my) / vue.k;
+  redessiner();
+}, { passive: false });
+canvas.addEventListener("dblclick", () => { recentrer(); redessiner(); });
+// Pincement (tactile)
+const touches = new Map(); let pince = null;
+canvas.addEventListener("touchstart", e => { if (e.touches.length === 2) { const [a, b] = e.touches; pince = { d: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY), k: vue.k }; glisse = null; } }, { passive: true });
+canvas.addEventListener("touchmove", e => { if (pince && e.touches.length === 2) { e.preventDefault(); const [a, b] = e.touches; vue.k = Math.max(0.005, Math.min(5, pince.k * Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY) / pince.d)); redessiner(); } }, { passive: false });
+canvas.addEventListener("touchend", () => { pince = null; });
+canvas.style.touchAction = "none";
+
+document.getElementById("recherche").addEventListener("input", construireListe);
+document.getElementById("filtres").addEventListener("click", e => {
+  if (e.target.tagName !== "BUTTON") return;
+  document.querySelectorAll("#filtres button").forEach(b => b.classList.toggle("actif", b === e.target));
+  construireListe();
+});
+window.addEventListener("resize", redessiner);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { lireCouleurs(); majInfo(); redessiner(); });
+
+fetch("arbres.json").then(r => r.json()).then(d => {
+  D = d; N = d.x.length;
+  D.x = Int32Array.from(d.x); D.y = Int32Array.from(d.y); D.t = Uint16Array.from(d.t);
+  genreDe = Uint16Array.from(d.taxons.map(t => t[0]));
+  document.getElementById("chargement").remove();
+  lireCouleurs(); recentrer(); indexer(); construireListe(); majInfo(); dessiner();
+}).catch(e => { console.error(e); document.getElementById("chargement").textContent = "Impossible de charger les données."; });
+</script>
+</body>
+</html>

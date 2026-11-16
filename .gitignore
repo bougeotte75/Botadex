@@ -15,3 +15,7 @@ dist/
 # Système
 .DS_Store
 Thumbs.db
+
+# Données dérivées volumineuses (régénérables via scripts/)
+data/processed/arbres_points.csv
+app/carte/arbres.json

@@ -1,0 +1,933 @@
+genre,espece,nom_fr,n_total,n_intra_muros,n_alignement,n_cimetiere,n_equipement,n_jardin,part,part_cumulee,rang,rarete
+Platanus,x hispanica,Platane,37965,34876,33267,1479,1189,2030,0.1729,0.1729,1,commune
+Aesculus,hippocastanum,Marronnier,19904,15481,12267,3710,1468,2459,0.09065,0.26355,2,commune
+Styphnolobium,japonicum,Sophora,10825,9797,8219,963,152,1491,0.0493,0.31285,3,commune
+Tilia,tomentosa,Tilleul,7635,6933,5881,369,399,986,0.03477,0.34762,4,commune
+Acer,platanoides,Erable,6647,4565,2850,1871,589,1337,0.03027,0.37789,5,commune
+Acer,pseudoplatanus,Erable,6606,4070,1240,3450,428,1488,0.03009,0.40798,6,commune
+Celtis,australis,Micocoulier,4947,4209,3523,693,395,336,0.02253,0.43051,7,commune
+Tilia,cordata,Tilleul,4187,2999,2492,510,149,1036,0.01907,0.44958,8,commune
+Aesculus,x carnea,Marronnier,4137,3820,3338,235,152,412,0.01884,0.46842,9,commune
+Carpinus,betulus,Charme,3706,2792,1272,558,353,1523,0.01688,0.4853,10,commune
+Pyrus,calleryana,Poirier à fleurs,3685,3258,2375,461,356,493,0.01678,0.50208,11,commune
+Corylus,colurna,Noisetier de Byzance,3391,2221,2435,652,26,278,0.01544,0.51752,12,commune
+Fraxinus,excelsior,Frêne,3273,2224,1378,1304,68,523,0.01491,0.53243,13,commune
+Acer,campestre,Erable,3244,2393,1705,381,352,806,0.01477,0.5472,14,commune
+Tilia,platyphyllos,Tilleul,3073,1523,1510,543,109,911,0.014,0.5612,15,commune
+Taxus,baccata,If,2774,1950,9,498,160,2107,0.01263,0.57383,16,commune
+Tilia,x euchlora,Tilleul,2686,1822,1021,984,325,356,0.01223,0.58606,17,commune
+Tilia,x europaea,Tilleul,2494,1998,875,402,123,1094,0.01136,0.59742,18,commune
+Platanus,orientalis,Platane,2453,829,934,1432,21,66,0.01117,0.60859,19,commune
+Pinus,nigra,Pin,2237,1450,228,47,206,1756,0.01019,0.61878,20,commune
+Robinia,pseudoacacia,Robinier,2213,2011,1044,74,179,916,0.01008,0.62886,21,commune
+Prunus,sp.,Cerisier à fleurs,2125,1818,544,240,464,877,0.00968,0.63854,22,commune
+Ulmus,sp.,Orme,2107,1735,1388,394,74,251,0.0096,0.64814,23,commune
+Tilia,sp.,Tilleul,2039,1805,528,186,478,847,0.00929,0.65743,24,commune
+Platanus,occidentalis,Platane,1939,1728,1723,210,2,4,0.00883,0.66626,25,commune
+Fagus,sylvatica,Hêtre,1919,1348,128,259,22,1510,0.00874,0.675,26,commune
+Prunus,avium,Merisier,1745,1392,444,211,178,912,0.00795,0.68295,27,commune
+Quercus,robur,Chêne,1528,715,249,83,35,1161,0.00696,0.68991,28,commune
+Gleditsia,triacanthos,Fevier,1493,1438,1046,48,48,351,0.0068,0.69671,29,commune
+Cercis,siliquastrum,Arbre de Judée,1366,1279,356,219,195,596,0.00622,0.70293,30,commune
+Paulownia,tomentosa,Paulownia,1286,1253,766,28,52,440,0.00586,0.70879,31,commune
+Prunus,serrulata,Cerisier à fleurs,1269,1111,232,147,164,726,0.00578,0.71457,32,commune
+Fraxinus,ornus,Frêne à fleurs,1258,995,587,218,50,403,0.00573,0.7203,33,commune
+Ostrya,carpinifolia,Charme-Houblon,1229,1102,932,37,34,226,0.0056,0.7259,34,commune
+Pinus,nigra subsp. nigra,Pin,1198,1037,17,96,147,938,0.00546,0.73136,35,commune
+Betula,pendula,Bouleau,1195,969,21,136,198,840,0.00544,0.7368,36,commune
+Malus,domestica,Pommier à fruits,1186,1165,64,10,842,270,0.0054,0.7422,37,commune
+Quercus,ilex,Chêne,1179,1088,545,101,61,472,0.00537,0.74757,38,commune
+Ginkgo,biloba,Arbre aux quarante écus,1152,1092,721,30,57,344,0.00525,0.75282,39,commune
+Populus,nigra,Peuplier,1117,745,384,314,179,240,0.00509,0.75791,40,commune
+Juglans,nigra,Noyer,1110,548,526,463,2,119,0.00506,0.76297,41,commune
+Liriodendron,tulipifera,Tulipier,1011,607,245,440,16,310,0.0046,0.76757,42,commune
+Lagerstroemia,indica,Lilas des indes,984,940,332,65,154,433,0.00448,0.77205,43,commune
+Fraxinus,angustifolia,Frêne,946,704,382,309,47,208,0.00431,0.77636,44,commune
+Magnolia,grandiflora,Magnolia,916,849,368,87,30,431,0.00417,0.78053,45,commune
+Koelreuteria,paniculata,Savonnier,910,836,350,60,106,394,0.00414,0.78467,46,commune
+Acer,negundo,Erable,909,602,200,337,65,307,0.00414,0.78881,47,commune
+Pinus,sylvestris,Pin,885,686,72,7,24,782,0.00403,0.79284,48,commune
+Liquidambar,styraciflua,Copalme,884,677,359,171,58,296,0.00403,0.79687,49,commune
+Prunus,cerasifera,Prunier à fleurs,883,736,131,132,166,454,0.00402,0.80089,50,commune
+Gleditsia,triacanthos f. Inermis,Fevier,866,725,479,135,29,223,0.00394,0.80483,51,peu commune
+Toona,sinensis,Cedrele,856,755,669,96,2,89,0.0039,0.80873,52,peu commune
+Acer,monspessulanum,Erable,828,719,515,55,56,202,0.00377,0.8125,53,peu commune
+Pyrus,communis,Poirier à fruits,804,800,29,1,633,141,0.00366,0.81616,54,peu commune
+Prunus,padus,Cerisier à grappes,766,700,404,75,73,214,0.00349,0.81965,55,peu commune
+Parrotia,persica,Parrotie de Perse - Arbre de fer,764,687,256,80,116,312,0.00348,0.82313,56,peu commune
+Ailanthus,altissima,Ailante,763,638,377,149,55,182,0.00347,0.8266,57,peu commune
+Populus,x canadensis,Peuplier,751,623,577,126,4,44,0.00342,0.83002,58,peu commune
+Pterocarya,fraxinifolia,Pterocarya,726,477,327,234,13,152,0.00331,0.83333,59,peu commune
+Quercus,sp.,Chêne,723,136,300,7,10,406,0.00329,0.83662,60,peu commune
+Quercus,cerris,Chêne,717,586,311,32,24,350,0.00327,0.83989,61,peu commune
+Malus,sp.,Pommier,707,610,116,39,111,441,0.00322,0.84311,62,peu commune
+Cedrus,atlantica,Cèdre,664,469,52,25,75,512,0.00302,0.84613,63,peu commune
+Aesculus,sp.,Marronnier,647,376,591,3,18,35,0.00295,0.84908,64,peu commune
+Quercus,rubra,Chêne,642,470,393,107,3,139,0.00292,0.852,65,peu commune
+Zelkova,serrata,Orme de Sibérie,594,536,303,37,87,167,0.00271,0.85471,66,peu commune
+Morus,alba,Mûrier,570,555,311,5,29,225,0.0026,0.85731,67,peu commune
+Populus,alba,Peuplier,547,435,259,106,24,158,0.00249,0.8598,68,peu commune
+Chamaecyparis,sp.,Faux-cyprès,535,98,0,522,5,8,0.00244,0.86224,69,peu commune
+x Cupressocyparis,leylandii,Cyprès,533,110,11,423,55,44,0.00243,0.86467,70,peu commune
+Catalpa,bignonioides,Catalpa,527,479,160,31,81,255,0.0024,0.86707,71,peu commune
+Prunus,x subhirtella,Cerisier à fleurs,524,495,93,6,84,341,0.00239,0.86946,72,peu commune
+Acer,sp.,Erable,514,345,251,2,32,229,0.00234,0.8718,73,peu commune
+Cornus,mas,Cornouiller,495,434,98,56,89,252,0.00225,0.87405,74,peu commune
+Chamaecyparis,lawsoniana,Faux-cyprès,492,86,0,376,8,108,0.00224,0.87629,75,peu commune
+Quercus,petraea,Chêne,472,208,144,2,15,311,0.00215,0.87844,76,peu commune
+Albizia,julibrissin,Arbre à soie,464,439,145,50,79,190,0.00211,0.88055,77,peu commune
+Tilia,americana,Tilleul,459,188,79,269,6,105,0.00209,0.88264,78,peu commune
+Styphnolobium,sp.,Sophora,455,448,381,8,3,63,0.00207,0.88471,79,peu commune
+Ilex,aquifolium,Houx,442,368,6,254,15,167,0.00201,0.88672,80,peu commune
+Alnus,cordata,Aulne,437,207,110,224,5,98,0.00199,0.88871,81,peu commune
+Fraxinus,sp.,Frêne,436,323,130,154,11,141,0.00199,0.8907,82,peu commune
+Acer,x freemanii,Erable,425,394,187,38,40,160,0.00194,0.89264,83,peu commune
+Amelanchier,x lamarckii,Amélanchier,399,395,93,8,39,259,0.00182,0.89446,84,peu commune
+Acer,saccharinum,Erable,395,383,118,0,65,212,0.0018,0.89626,85,peu commune
+Ligustrum,lucidum,Troene,384,252,158,136,7,83,0.00175,0.89801,86,peu commune
+Acer,cappadocicum,Erable,372,294,154,17,44,157,0.00169,0.8997,87,peu commune
+Cupressus,sempervirens,Cyprès,359,324,18,188,12,141,0.00163,0.90133,88,peu commune
+Quercus,pubescens,Chêne,359,215,70,2,13,274,0.00163,0.90296,89,peu commune
+Gymnocladus,dioica,Chicot du Canada,330,321,266,12,4,48,0.0015,0.90446,90,peu commune
+Betula,utilis,Bouleau,328,319,0,3,2,323,0.00149,0.90595,91,peu commune
+Malus,tschonoskii,Pommier à fleurs,325,321,255,1,13,56,0.00148,0.90743,92,peu commune
+Pinus,nigra subsp. laricio,Pin,319,204,41,0,4,274,0.00145,0.90888,93,peu commune
+Fraxinus,americana,Frêne,316,306,196,13,1,106,0.00144,0.91032,94,peu commune
+Magnolia,kobus,Magnolia,305,298,175,17,33,80,0.00139,0.91171,95,peu commune
+Trachycarpus,fortunei,Palmier,287,266,71,2,6,208,0.00131,0.91302,96,peu commune
+Acer,rubrum,Erable,275,159,79,150,10,36,0.00125,0.91427,97,peu commune
+Ulmus,minor,Orme,269,256,159,14,7,89,0.00123,0.9155,98,peu commune
+Cupressus,arizonica,Cyprès,263,66,1,196,24,42,0.0012,0.9167,99,peu commune
+Aria,edulis,Aria edulis,250,224,104,10,27,109,0.00114,0.91784,100,peu commune
+Malus,trilobata,Pommier à fleurs,245,235,167,4,27,47,0.00112,0.91896,101,peu commune
+Broussonetia,papyrifera,Mûrier,242,126,53,103,7,79,0.0011,0.92006,102,peu commune
+Olea,europaea,Olivier,238,215,40,32,31,135,0.00108,0.92114,103,peu commune
+Cedrus,deodara,Cèdre,229,192,17,3,47,162,0.00104,0.92218,104,peu commune
+Zelkova,carpinifolia,Orme de Sibérie,227,197,95,21,27,84,0.00103,0.92321,105,peu commune
+Ligustrum,japonicum,Troëne,219,198,65,10,4,140,0.001,0.92421,106,peu commune
+Crataegus,laevigata,Aubépine,218,176,28,26,33,131,0.00099,0.9252,107,peu commune
+Platanus,sp.,Platane,213,204,196,1,4,12,0.00097,0.92617,108,peu commune
+Magnolia,x soulangeana,Magnolia,210,174,17,10,18,165,0.00096,0.92713,109,peu commune
+Alnus,x spaethii,Aulne,204,161,113,43,4,44,0.00093,0.92806,110,peu commune
+Prunus,domestica,Prunier à fruits,203,160,14,44,60,85,0.00092,0.92898,111,peu commune
+Prunus,mahaleb,Cerisier à fleurs,199,169,56,13,14,116,0.00091,0.92989,112,peu commune
+Prunus,x schmittii,Cerisier à fleurs,199,199,159,4,33,3,0.00091,0.9308,113,peu commune
+Cercidiphyllum,japonicum,Arbre à caramel,197,183,26,2,6,163,0.0009,0.9317,114,peu commune
+Sorbus,aucuparia,Sorbier,197,182,57,6,39,95,0.0009,0.9326,115,peu commune
+Melia,azedarach,Lilas de Perse,195,125,63,81,1,50,0.00089,0.93349,116,peu commune
+Tilia,x flavescens,Tilleul,193,193,191,0,2,0,0.00088,0.93437,117,peu commune
+Acer,palmatum,Erable,190,163,29,6,12,143,0.00087,0.93524,118,peu commune
+Prunus,serrula,Cerisier à fleurs,185,180,35,0,100,50,0.00084,0.93608,119,peu commune
+Betula,sp.,Bouleau,185,176,37,6,12,130,0.00084,0.93692,120,peu commune
+Metasequoia,glyptostroboides,Metaséquoia,183,113,35,62,0,86,0.00083,0.93775,121,peu commune
+Salix,alba,Saule,178,169,16,5,7,150,0.00081,0.93856,122,peu commune
+Populus,sp.,Peuplier,171,153,134,4,2,31,0.00078,0.93934,123,peu commune
+Thuja,sp.,Thuya,165,159,0,140,12,13,0.00075,0.94009,124,peu commune
+Crataegus,monogyna,Aubepine,160,143,10,9,6,135,0.00073,0.94082,125,peu commune
+Acer,tataricum subsp. ginnala,Erable,157,147,55,2,11,89,0.00072,0.94154,126,peu commune
+Ulmus,pumila,Orme,154,12,9,139,2,4,0.0007,0.94224,127,peu commune
+Corylus,avellana,Noisetier,153,119,20,8,28,97,0.0007,0.94294,128,peu commune
+Pinus,sp.,Pin,152,146,47,2,23,80,0.00069,0.94363,129,peu commune
+Sambucus,nigra,Sureau,150,139,1,18,19,112,0.00068,0.94431,130,peu commune
+Buxus,sempervirens,Buis,146,39,0,33,0,113,0.00066,0.94497,131,peu commune
+Ficus,carica,Figuier,146,131,0,9,38,99,0.00066,0.94563,132,peu commune
+Acer,buergerianum,Erable,142,138,50,2,8,82,0.00065,0.94628,133,peu commune
+Thuja,plicata,Thuya,142,111,1,41,54,46,0.00065,0.94693,134,peu commune
+Tilia,mongolica,Tilleul,139,123,54,17,12,56,0.00063,0.94756,135,peu commune
+Celtis,occidentalis,Micocoulier,139,114,31,0,4,104,0.00063,0.94819,136,peu commune
+Alnus,glutinosa,Aulne,135,127,27,2,8,98,0.00061,0.9488,137,peu commune
+Elaeagnus,angustifolia,Eleagnus - Chalef,134,128,28,2,2,102,0.00061,0.94941,138,peu commune
+Prunus,x yedoensis,Cerisier à fleurs,132,127,16,0,36,80,0.0006,0.95001,139,peu commune
+Malus,floribunda,Pommier à fleurs,130,125,9,1,11,109,0.00059,0.9506,140,rare
+Picea,abies,Epicéa,129,80,2,20,51,56,0.00059,0.95119,141,rare
+Pyrus,sp.,Poirier,128,114,24,5,38,61,0.00058,0.95177,142,rare
+Castanea,sativa,Châtaignier,127,18,98,0,2,27,0.00058,0.95235,143,rare
+Acer,opalus,Erable,127,95,45,1,14,67,0.00058,0.95293,144,rare
+Prunus,maackii,Cerisier à fleurs,127,125,46,0,11,70,0.00058,0.95351,145,rare
+Pyrus,salicifolia,Poirier à fleurs,126,125,0,0,0,126,0.00057,0.95408,146,rare
+Prunus,laurocerasus,Laurier du caucase,124,48,2,65,24,33,0.00056,0.95464,147,rare
+Prunus,lusitanica,Laurier du Portugal,123,92,63,29,4,27,0.00056,0.9552,148,rare
+Malus,sylvestris,Pommier à fleurs,123,109,38,0,10,75,0.00056,0.95576,149,rare
+Crataegus,sp.,Aubepine,117,110,6,6,22,83,0.00053,0.95629,150,rare
+Quercus,frainetto,Chêne,117,78,23,36,3,55,0.00053,0.95682,151,rare
+Pinus,pinea,Pin,111,99,10,6,0,95,0.00051,0.95733,152,rare
+Prunus,dulcis,Amandier,109,103,10,16,10,73,0.0005,0.95783,153,rare
+Pinus,wallichiana,Pin,108,98,10,6,10,82,0.00049,0.95832,154,rare
+Tilia,henryana,Tilleul,106,82,37,21,8,40,0.00048,0.9588,155,rare
+Cydonia,oblonga,Cognassier,106,94,6,3,41,56,0.00048,0.95928,156,rare
+Diospyros,lotus,Plaqueminier,105,77,8,36,1,60,0.00048,0.95976,157,rare
+Prunus,armeniaca,Abricotier,104,102,5,3,62,34,0.00047,0.96023,158,rare
+Populus,x canescens,Peuplier,103,102,87,1,12,3,0.00047,0.9607,159,rare
+Arbutus,unedo,Arbousier,102,92,3,4,4,91,0.00046,0.96116,160,rare
+Amelanchier,sp.,Amélanchier,97,94,35,5,11,46,0.00044,0.9616,161,rare
+Amelanchier,arborea,Amélanchier,96,95,32,4,7,53,0.00044,0.96204,162,rare
+Morus,sp.,Mûrier,95,91,18,1,35,41,0.00043,0.96247,163,rare
+Juglans,regia,Noyer,95,68,8,19,2,66,0.00043,0.9629,164,rare
+Tetradium,daniellii,Arbre à miel,93,87,16,2,5,70,0.00042,0.96332,165,rare
+Prunus,sargentii,Cerisier à fleurs,93,86,48,1,9,35,0.00042,0.96374,166,rare
+Populus,tremula,Peuplier,85,81,57,0,3,25,0.00039,0.96413,167,rare
+Quercus,imbricaria,Chêne,84,73,40,8,0,36,0.00038,0.96451,168,rare
+Magnolia,sp.,Magnolia,83,75,3,1,19,60,0.00038,0.96489,169,rare
+Quercus,palustris,Chêne,82,77,31,3,11,37,0.00037,0.96526,170,rare
+x Chitalpa,tashkentensis,Chitalpa,80,75,8,1,14,57,0.00036,0.96562,171,rare
+Prunus,persica,Pêcher,80,76,7,1,40,32,0.00036,0.96598,172,rare
+Betula,pubescens,Bouleau,80,72,30,0,14,36,0.00036,0.96634,173,rare
+Cedrus,sp.,Cèdre,79,43,0,2,8,69,0.00036,0.9667,174,rare
+Castanea,sp.,Châtaignier,79,1,78,0,0,1,0.00036,0.96706,175,rare
+Photinia,x fraseri,Photinia,79,76,50,3,12,14,0.00036,0.96742,176,rare
+Malus,pumila,Pommier à fruits,79,70,0,2,2,75,0.00036,0.96778,177,rare
+Prunus,x hillieri,,79,79,72,0,6,1,0.00036,0.96814,178,rare
+Sorbus,torminalis,Alisier,78,70,11,2,14,51,0.00036,0.9685,179,rare
+Sorbus,intermedia,Alisier,78,72,43,1,12,22,0.00036,0.96886,180,rare
+Celtis,sp.,Micocoulier,71,58,41,0,7,23,0.00032,0.96918,181,rare
+Fraxinus,pennsylvanica,Frêne,69,63,49,0,0,20,0.00031,0.96949,182,rare
+Sequoiadendron,giganteum,Sequoia,69,53,0,1,1,67,0.00031,0.9698,183,rare
+Acer,davidii,Erable,69,59,29,6,5,29,0.00031,0.97011,184,rare
+Salix,babylonica,Saule,68,56,10,5,10,43,0.00031,0.97042,185,rare
+Quercus,coccinea,Chêne,68,60,41,3,5,19,0.00031,0.97073,186,rare
+Betula,papyrifera,Bouleau,67,59,0,6,7,54,0.00031,0.97104,187,rare
+Maclura,pomifera,Oranger des Osages,67,62,3,0,0,64,0.00031,0.97135,188,rare
+Populus,simonii,Peuplier,66,61,22,0,3,41,0.0003,0.97165,189,rare
+Cupressus,sp.,Cyprès,65,43,0,21,3,41,0.0003,0.97195,190,rare
+Acer,griseum,Erable,65,59,12,0,10,43,0.0003,0.97225,191,rare
+Malus,toringoides,Pommier à fleurs,63,62,9,1,2,51,0.00029,0.97254,192,rare
+Mespilus,germanica,Néflier commun,63,54,4,6,12,41,0.00029,0.97283,193,rare
+Betula,nigra,Bouleau,63,43,2,11,8,42,0.00029,0.97312,194,rare
+Cladrastis,kentukea,Virgilier,62,53,11,4,1,46,0.00028,0.9734,195,rare
+Calocedrus,decurrens,Libocèdre,61,49,0,2,7,52,0.00028,0.97368,196,rare
+Cornus,sp.,Cornouiller,61,51,16,7,4,34,0.00028,0.97396,197,rare
+Eriobotrya,japonica,Néflier,60,57,1,0,19,40,0.00027,0.97423,198,rare
+Eucalyptus,gunnii,Eucalyptus,59,55,1,0,9,49,0.00027,0.9745,199,rare
+Sorbus,sp.,Sorbier,59,36,15,4,8,32,0.00027,0.97477,200,rare
+Platycladus,orientalis,Thuya,58,42,0,35,2,21,0.00026,0.97503,201,rare
+Quercus,suber,Chêne,57,50,0,6,1,50,0.00026,0.97529,202,rare
+Salix,caprea,Saule,57,53,1,1,4,51,0.00026,0.97555,203,rare
+Fontanesia,phillyreoides,Fontanesia,57,45,5,10,0,42,0.00026,0.97581,204,rare
+Laburnum,anagyroides,Cytise,57,40,1,11,0,45,0.00026,0.97607,205,rare
+Ulmus,x hollandica,Orme,56,51,14,0,0,42,0.00026,0.97633,206,rare
+Thuja,occidentalis,Thuya,55,51,2,44,3,6,0.00025,0.97658,207,rare
+Morus,nigra,Mûrier,55,51,3,1,5,46,0.00025,0.97683,208,rare
+Sequoia,sempervirens,Sequoia,52,46,5,1,3,43,0.00024,0.97707,209,rare
+Ulmus,glabra Huds.,Orme,51,51,48,0,0,3,0.00023,0.9773,210,rare
+Aesculus,pavia,Marronnier,51,48,37,1,0,13,0.00023,0.97753,211,rare
+Populus,deltoides,Peuplier,50,50,37,0,0,13,0.00023,0.97776,212,rare
+Alnus,sp.,Aulne,49,48,28,1,6,14,0.00022,0.97798,213,rare
+Laurus,nobilis,Laurier sauce,48,40,1,13,12,22,0.00022,0.9782,214,rare
+Zelkova,sp.,Orme de Sibérie,48,44,16,1,20,11,0.00022,0.97842,215,rare
+Magnolia,x loebneri,Magnolia,48,44,31,0,0,17,0.00022,0.97864,216,rare
+Ehretia,dicksonii,Cabrillet,47,38,3,2,0,42,0.00021,0.97885,217,rare
+Prunus,cerasus,"Cerisier à fleurs, cerisier griotte",46,41,1,6,13,26,0.00021,0.97906,218,rare
+Salix,sp.,Saule,46,40,3,0,7,36,0.00021,0.97927,219,rare
+Quercus,x hispanica,Chêne,45,40,15,1,2,27,0.0002,0.97947,220,rare
+Acacia,dealbata,Mimosa,45,45,15,0,15,15,0.0002,0.97967,221,rare
+Pinus,mugo,Pin,45,20,0,0,24,21,0.0002,0.97987,222,rare
+Sorbus,latifolia,Alisier,43,36,9,1,11,22,0.0002,0.98007,223,rare
+Clerodendrum,trichotomum,Clerodendron,43,40,17,5,1,20,0.0002,0.98027,224,rare
+Pinus,strobus,Pin,43,35,0,3,4,36,0.0002,0.98047,225,rare
+Cedrus,libani,Cèdre,43,32,1,2,0,40,0.0002,0.98067,226,rare
+Rhus,typhina,Sumac,42,39,0,0,0,42,0.00019,0.98086,227,rare
+Salix,viminalis,Saule,41,19,9,4,2,26,0.00019,0.98105,228,rare
+Crataegus,persimilis,Aubepine,40,39,30,0,1,9,0.00018,0.98123,229,rare
+Diospyros,kaki,Plaqueminier,38,32,1,0,6,31,0.00017,0.9814,230,rare
+Prunus,Fleur n. sp.,Prunus Fleur n. sp.,38,38,6,0,3,29,0.00017,0.98157,231,rare
+Quercus,phellos,Chêne,38,36,21,1,0,16,0.00017,0.98174,232,rare
+Picea,pungens,Epicéa,38,33,0,0,9,29,0.00017,0.98191,233,rare
+Quercus,castaneifolia,Chêne,38,31,8,1,0,29,0.00017,0.98208,234,rare
+Tilia,dasystyla,Tilleul,36,30,30,0,0,6,0.00016,0.98224,235,rare
+Magnolia,stellata,Magnolia,36,31,0,1,5,30,0.00016,0.9824,236,rare
+Cornus,officinalis,Cornouiller,35,19,2,0,16,17,0.00016,0.98256,237,rare
+Amelanchier,canadensis,Amelanchier,35,35,2,0,1,32,0.00016,0.98272,238,rare
+Malus,toringo,Pommier à fleurs,34,33,15,0,5,14,0.00015,0.98287,239,rare
+Alnus,incana,Aulne,33,32,10,0,0,23,0.00015,0.98302,240,rare
+Abies,pinsapo,Sapin,32,22,3,2,1,26,0.00015,0.98317,241,rare
+Pinus,nigra subsp. salzmannii,Pin,32,10,20,0,0,12,0.00015,0.98332,242,rare
+Larix,decidua,Mélèze,31,22,0,0,3,28,0.00014,0.98346,243,rare
+Juglans,sp.,Noyer,31,30,20,0,0,11,0.00014,0.9836,244,rare
+Olea,europea,,31,25,0,4,9,18,0.00014,0.98374,245,rare
+Phillyrea,latifolia,Filaire,31,28,0,0,0,31,0.00014,0.98388,246,rare
+Ulmus,laevis,Orme,30,30,24,0,1,5,0.00014,0.98402,247,rare
+Hippophae,rhamnoides,Argousier,30,30,0,0,0,30,0.00014,0.98416,248,rare
+Quercus,phillyreoides,Chêne,30,29,0,1,0,29,0.00014,0.9843,249,rare
+Cercis,canadensis,Gainier,29,26,1,2,6,20,0.00013,0.98443,250,rare
+Tamarix,sp.,Tamaris,29,26,0,1,7,21,0.00013,0.98456,251,rare
+Ligustrum,ovalifolium,Troene,29,24,1,5,0,23,0.00013,0.98469,252,rare
+Quercus,acutissima,Chêne,29,25,5,4,1,19,0.00013,0.98482,253,rare
+Robinia,x margaretta,Robinier,29,28,11,0,2,16,0.00013,0.98495,254,rare
+Phellodendron,amurense,Phellodendron,29,28,8,0,3,18,0.00013,0.98508,255,rare
+Amelanchier,ovalis,Amélanchier,28,28,3,0,6,19,0.00013,0.98521,256,rare
+Pinus,pinaster,Pin,28,26,0,0,0,28,0.00013,0.98534,257,rare
+Abies,concolor,Sapin,28,13,2,1,13,12,0.00013,0.98547,258,rare
+Acer,rufinerve,Erable,27,25,11,0,8,8,0.00012,0.98559,259,rare
+Taxodium,distichum,Cyprès Chauve,27,16,2,0,0,25,0.00012,0.98571,260,rare
+Crataegus,x media,Aubépine,27,27,0,0,0,27,0.00012,0.98583,261,rare
+Celtis,sinensis,Micocoulier,27,24,18,0,0,9,0.00012,0.98595,262,rare
+Quercus,coccifera,Chêne,27,26,0,0,0,27,0.00012,0.98607,263,rare
+Quercus,bicolor,Chêne,27,26,24,0,1,2,0.00012,0.98619,264,rare
+Araucaria,araucana,Araucaria,27,21,0,0,2,25,0.00012,0.98631,265,rare
+Chamaecyparis,nootkatensis,Faux-cyprès,26,22,0,2,0,24,0.00012,0.98643,266,rare
+Acer,x zoeschense,Erable,26,23,13,1,0,12,0.00012,0.98655,267,rare
+Populus,n. sp.,,26,26,26,0,0,0,0.00012,0.98667,268,rare
+Abies,bracteata,Sapin,26,26,0,0,0,26,0.00012,0.98679,269,rare
+Eucalyptus,sp.,Eucalyptus,26,24,2,1,4,19,0.00012,0.98691,270,rare
+Taxus,sp.,If,25,21,0,2,2,21,0.00011,0.98702,271,rare
+Carpinus,sp.,Charme,24,21,0,0,11,13,0.00011,0.98713,272,rare
+Gleditsia,sp.,Fevier,24,24,11,1,4,8,0.00011,0.98724,273,rare
+Chamaecyparis,pisifera,Faux-cyprès,24,20,0,0,0,24,0.00011,0.98735,274,rare
+Aesculus,flava,Marronnier,24,20,2,1,0,21,0.00011,0.98746,275,rare
+Cornus,controversa,Cornouiller,23,20,0,0,0,23,0.0001,0.98756,276,rare
+Pterocarya,sp.,Pterocarya,23,23,1,0,0,22,0.0001,0.98766,277,rare
+Abies,nordmanniana,Sapin,23,12,0,1,2,20,0.0001,0.98776,278,rare
+Sorbus,domestica,Cormier,23,13,0,1,5,17,0.0001,0.98786,279,rare
+Phillyrea,angustifolia,Filaire,22,20,0,2,0,20,0.0001,0.98796,280,rare
+Acer,japonicum,Erable,22,20,0,0,4,18,0.0001,0.98806,281,rare
+Styphnolobium,japonicum var. pubescens,Sophora,21,13,16,0,1,4,0.0001,0.98816,282,rare
+Ilex,sp.,Houx,21,20,5,0,2,14,0.0001,0.98826,283,rare
+Davidia,involucrata,Arbre aux mouchoirs,21,18,0,0,2,19,0.0001,0.98836,284,rare
+Ulmus,glabra,Orme,20,18,7,0,1,12,9e-05,0.98845,285,rare
+Ligustrum,sp.,Troëne,20,17,3,2,1,14,9e-05,0.98854,286,rare
+Cephalotaxus,harringtonia,Céphalotaxe,20,18,0,0,0,20,9e-05,0.98863,287,rare
+Pyrus,nivalis,Poirier à fleurs,20,20,0,0,1,19,9e-05,0.98872,288,rare
+Sambucus,sp.,Sureau,20,13,1,6,1,12,9e-05,0.98881,289,rare
+Crataegus,x lavalleei,Aubépine,20,18,1,0,6,13,9e-05,0.9889,290,rare
+Abies,sp.,Sapin,20,15,1,4,5,10,9e-05,0.98899,291,rare
+Ptelea,trifoliata,Orme de Samarie,19,12,3,4,0,12,9e-05,0.98908,292,rare
+Quercus,x turneri,Chêne,19,18,0,0,0,19,9e-05,0.98917,293,rare
+Hibiscus,syriacus,Althéa,19,19,10,1,0,8,9e-05,0.98926,294,rare
+Nothofagus,antarctica,Nothofagus,19,19,0,0,0,19,9e-05,0.98935,295,rare
+Heptacodium,miconioides,Heptacodion de Chine,18,17,0,0,0,18,8e-05,0.98943,296,rare
+Nyssa,sylvatica,Tupélo,18,14,4,1,0,13,8e-05,0.98951,297,rare
+Lagerstroemia,sp.,Lilas des indes,18,18,7,1,0,10,8e-05,0.98959,298,rare
+Prunus,spinosa,Prunellier,18,9,1,8,0,9,8e-05,0.98967,299,rare
+Cotinus,coggygria,Arbre à perruque,18,6,0,6,0,12,8e-05,0.98975,300,rare
+Acer,capillipes,Erable,17,15,5,0,1,11,8e-05,0.98983,301,rare
+Pyrus,Fruit n. sp.,Poirier,17,17,0,0,10,7,8e-05,0.98991,302,rare
+Euonymus,europaeus,Fusain,17,15,0,13,0,4,8e-05,0.98999,303,rare
+Carya,illinoinensis,Caryer,16,11,1,5,0,10,7e-05,0.99006,304,rare
+Robinia,sp.,Robinier,16,15,7,1,1,7,7e-05,0.99013,305,tres rare
+Sassafras,albidum,Laurier des Iroquois,16,12,2,0,0,14,7e-05,0.9902,306,tres rare
+Malus,x zumi,Pommier à fleurs,16,15,0,0,0,16,7e-05,0.99027,307,tres rare
+Malus,Fruit n. sp.,Pommier à fruits,16,16,1,0,10,5,7e-05,0.99034,308,tres rare
+Amelanchier,alnifolia,Amélanchier,16,16,5,2,1,8,7e-05,0.99041,309,tres rare
+Paulownia,sp.,Paulownia,16,16,8,0,3,5,7e-05,0.99048,310,tres rare
+Eucommia,ulmoides,Arbre à Gutta-Percha,16,10,0,1,0,15,7e-05,0.99055,311,tres rare
+Cinnamomum,camphora,Camphrier,15,15,0,4,0,11,7e-05,0.99062,312,tres rare
+Corylus,sp.,Noisetier,15,13,0,0,6,9,7e-05,0.99069,313,tres rare
+Pyrus,pyrifolia,,15,14,13,1,0,1,7e-05,0.99076,314,tres rare
+Cryptomeria,japonica,Cryptomeria,15,11,0,0,0,15,7e-05,0.99083,315,tres rare
+Halesia,carolina,Halesia,15,15,13,0,0,2,7e-05,0.9909,316,tres rare
+Pinus,bungeana,Pin,14,10,0,0,0,14,6e-05,0.99096,317,tres rare
+Juniperus,communis,Genévrier,14,10,0,0,0,14,6e-05,0.99102,318,tres rare
+Cephalotaxus,fortunei,Céphalotaxe,14,6,0,0,0,14,6e-05,0.99108,319,tres rare
+Alangium,platanifolium,Alangium,14,7,0,2,0,12,6e-05,0.99114,320,tres rare
+Ulmus,parvifolia,Orme,14,13,7,0,0,7,6e-05,0.9912,321,tres rare
+Albizia,sp.,Arbre à soie,14,13,0,1,6,7,6e-05,0.99126,322,tres rare
+Punica,granatum,Grenadier,14,13,0,4,1,9,6e-05,0.99132,323,tres rare
+Firmiana,simplex,Sterculier,13,11,1,0,2,10,6e-05,0.99138,324,tres rare
+Quercus,shumardii,Chêne,13,12,12,0,0,1,6e-05,0.99144,325,tres rare
+Picea,sp.,Epicéa,13,12,1,1,5,6,6e-05,0.9915,326,tres rare
+Amelanchier,laevis,Amélanchier,13,12,4,0,7,2,6e-05,0.99156,327,tres rare
+Gymnocladus,sp.,Fevier,13,12,13,0,0,0,6e-05,0.99162,328,tres rare
+Quercus,robur (Fastigiata Group),Chêne,13,13,2,0,0,11,6e-05,0.99168,329,tres rare
+Fontanesia,phillyreoides subsp. fortunei,Fontanesia,13,11,0,8,0,5,6e-05,0.99174,330,tres rare
+Diospyros,virginiana,Plaqueminier,12,4,0,0,0,12,5e-05,0.99179,331,tres rare
+Pterocarya,stenoptera,Pterocarya,12,10,0,0,0,12,5e-05,0.99184,332,tres rare
+Acer,tataricum,Erable,12,10,6,0,1,5,5e-05,0.99189,333,tres rare
+Davidia,involucrata var. vilmoriniana,Arbre aux mouchoirs,12,10,0,2,0,10,5e-05,0.99194,334,tres rare
+Malus,baccata,Pommier à fleurs,12,9,1,0,1,10,5e-05,0.99199,335,tres rare
+Picea,orientalis,Epicéa,12,6,3,0,0,9,5e-05,0.99204,336,tres rare
+Liquidambar,sp.,Copalme,12,11,2,0,3,7,5e-05,0.99209,337,tres rare
+Salix,babylonica var. pekinensis,Saule,12,11,0,0,3,9,5e-05,0.99214,338,tres rare
+Prunus,n. sp.,,12,12,9,0,3,0,5e-05,0.99219,339,tres rare
+Cladrastis,sinensis,Virgilier,12,10,0,2,2,8,5e-05,0.99224,340,tres rare
+Cercis,sp.,Arbre de Judée,11,7,1,0,0,10,5e-05,0.99229,341,tres rare
+Prunus,Fruit n. sp.,Prunus Fruit n. sp.,11,11,0,0,7,4,5e-05,0.99234,342,tres rare
+Eriolobus,sp.,,11,11,9,0,0,2,5e-05,0.99239,343,tres rare
+Sorbus,ulleungensis,Sorbier,11,10,4,0,0,7,5e-05,0.99244,344,tres rare
+Koelreuteria,sp.,Savonnier,11,10,1,1,5,4,5e-05,0.99249,345,tres rare
+x Sycoparrotia,semidecidua,Sycoparrotia,11,8,0,0,0,11,5e-05,0.99254,346,tres rare
+Malus,x robusta,,11,10,0,0,1,10,5e-05,0.99259,347,tres rare
+Ligustrum,sinense,Troene,11,10,0,0,7,4,5e-05,0.99264,348,tres rare
+Populus,x berolinensis,Peuplier,10,8,6,0,0,4,5e-05,0.99269,349,tres rare
+Acer,pensylvanicum,Erable,10,9,7,1,2,0,5e-05,0.99274,350,tres rare
+Picea,pungens f. Glauca,Epicéa,10,10,0,0,0,10,5e-05,0.99279,351,tres rare
+Carpinus,japonica,Charme,10,9,0,0,0,10,5e-05,0.99284,352,tres rare
+Poncirus,trifoliata,Citronnier,10,10,0,0,0,10,5e-05,0.99289,353,tres rare
+Zanthoxylum,simulans,Poivrier,10,10,0,2,0,8,5e-05,0.99294,354,tres rare
+Olea,sp.,,10,9,0,1,2,7,5e-05,0.99299,355,tres rare
+Cornus,sanguinea,Cornouiller,10,10,0,0,1,9,5e-05,0.99304,356,tres rare
+Cotoneaster,sp.,Cotoneaster,10,8,0,9,1,0,5e-05,0.99309,357,tres rare
+Salix,rosmarinifolia,Saule,10,10,0,0,0,10,5e-05,0.99314,358,tres rare
+Quercus,macranthera,Chêne,10,7,0,0,0,10,5e-05,0.99319,359,tres rare
+Malus,toringo var. sargentii,Pommier à fleurs,10,8,0,0,0,10,5e-05,0.99324,360,tres rare
+Cornus,florida,Cornouiller,10,10,0,0,0,10,5e-05,0.99329,361,tres rare
+Cercis,chinensis,Gainier,9,6,0,0,3,6,4e-05,0.99333,362,tres rare
+Acer,cissifolium,Erable,9,6,2,0,0,7,4e-05,0.99337,363,tres rare
+Pseudotsuga,menziesii,Sapin Douglas,9,3,1,1,0,7,4e-05,0.99341,364,tres rare
+Betula,populifolia,Bouleau,9,8,0,0,0,9,4e-05,0.99345,365,tres rare
+Acer,saccharum,Erable,9,8,3,0,0,6,4e-05,0.99349,366,tres rare
+Chionanthus,retusus,Chimonanthe,9,5,0,0,0,9,4e-05,0.99353,367,tres rare
+Gleditsia,sinensis,Fevier,9,7,4,0,3,2,4e-05,0.99357,368,tres rare
+Parrotia,sp.,,9,8,1,0,3,5,4e-05,0.99361,369,tres rare
+Tilia,dasystyla subsp. caucasica,Tilleul,8,0,6,0,0,2,4e-05,0.99365,370,tres rare
+Phillyrea,sp.,Filaire,8,6,0,2,0,6,4e-05,0.99369,371,tres rare
+Betula,ermanii,Bouleau,8,8,0,0,0,8,4e-05,0.99373,372,tres rare
+Lonicera,maackii,Chèvrefeuille,8,8,0,0,0,8,4e-05,0.99377,373,tres rare
+Picea,omorika,Epicéa,8,3,0,0,0,8,4e-05,0.99381,374,tres rare
+Acer,negundo var. californicum,Erable,8,8,6,1,0,1,4e-05,0.99385,375,tres rare
+Viburnum,tinus,Viorne,8,4,0,5,0,3,4e-05,0.99389,376,tres rare
+Prunus,x blireana,Cerisier à fleurs,8,8,5,0,0,3,4e-05,0.99393,377,tres rare
+Cydonia,sp.,,8,8,0,0,3,5,4e-05,0.99397,378,tres rare
+Cunninghamia,lanceolata,Cunninghamia,8,2,0,0,0,8,4e-05,0.99401,379,tres rare
+Ficus,sp.,Figuier,8,8,0,0,5,3,4e-05,0.99405,380,tres rare
+x Chitalpa,sp.,,8,8,0,0,4,4,4e-05,0.99409,381,tres rare
+Corylus,maxima,Noisetier,8,6,0,1,1,6,4e-05,0.99413,382,tres rare
+Salix,cinerea,Saule,8,7,0,0,0,8,4e-05,0.99417,383,tres rare
+Salix,fragilis,Saule,8,6,1,0,0,7,4e-05,0.99421,384,tres rare
+Aesculus,parviflora,Marronnier,7,4,1,0,0,6,3e-05,0.99424,385,tres rare
+Quercus,dentata,Chêne,7,6,0,1,0,6,3e-05,0.99427,386,tres rare
+Quercus,glauca,Chêne,7,5,0,0,0,7,3e-05,0.9943,387,tres rare
+Cornus,kousa,Cornouiller,7,6,0,1,0,6,3e-05,0.99433,388,tres rare
+Viburnum,sp.,,7,7,4,0,0,3,3e-05,0.99436,389,tres rare
+Quercus,pyrenaica,Chêne,7,6,0,0,1,6,3e-05,0.99439,390,tres rare
+Catalpa,sp.,Catalpa,7,7,3,0,2,2,3e-05,0.99442,391,tres rare
+Malus,Fleur n. sp.,Pommier à fleurs,7,7,0,0,2,5,3e-05,0.99445,392,tres rare
+Alangium,chinense,Alangium,7,5,0,0,0,7,3e-05,0.99448,393,tres rare
+Staphylea,colchica,Staphylier,7,6,0,1,0,6,3e-05,0.99451,394,tres rare
+Robinia,x ambigua,Robinier,7,6,6,0,0,1,3e-05,0.99454,395,tres rare
+Crataegus,x mordenensis,Aubépine,7,7,7,0,0,0,3e-05,0.99457,396,tres rare
+Zanthoxylum,piperitum,Poivrier,7,3,0,0,0,7,3e-05,0.9946,397,tres rare
+Acer,carpinifolium,Erable,7,4,1,0,1,5,3e-05,0.99463,398,tres rare
+Quercus,myrsinifolia,Chêne,7,6,4,0,0,3,3e-05,0.99466,399,tres rare
+Juniperus,virginiana,Genévrier,7,1,0,0,0,7,3e-05,0.99469,400,tres rare
+Celtis,julianae,Micocoulier,7,7,1,0,0,6,3e-05,0.99472,401,tres rare
+Carpinus,orientalis,Charme,7,4,0,0,0,7,3e-05,0.99475,402,tres rare
+Salix,x pendulina,Saule,6,4,1,0,0,5,3e-05,0.99478,403,tres rare
+Sorbus,aria,,6,6,6,0,0,0,3e-05,0.99481,404,tres rare
+Malus,x purpurea,Pommier à fleurs,6,6,0,0,0,6,3e-05,0.99484,405,tres rare
+Osmanthus,x burkwoodii,Olivier odorant,6,3,0,4,0,2,3e-05,0.99487,406,tres rare
+Juniperus,sp.,Genévrier,6,2,0,2,1,3,3e-05,0.9949,407,tres rare
+Quercus,variabilis,Chêne,6,2,0,0,0,6,3e-05,0.99493,408,tres rare
+Buxus,sp.,Buis,6,5,0,1,0,5,3e-05,0.99496,409,tres rare
+Pistacia,sp.,,6,6,0,2,0,4,3e-05,0.99499,410,tres rare
+Rhamnus,alaternus,Nerprun,6,6,0,2,0,4,3e-05,0.99502,411,tres rare
+Fremontodendron,californicum,Fremontia,6,5,0,1,0,5,3e-05,0.99505,412,tres rare
+Robinia,viscosa,Robinier,6,3,2,0,0,4,3e-05,0.99508,413,tres rare
+Betula,albosinensis,,6,5,0,0,0,6,3e-05,0.99511,414,tres rare
+Pterostyrax,hispida,Pterostyrax,6,6,0,0,0,6,3e-05,0.99514,415,tres rare
+Toona,sp.,Cedrele,6,5,4,0,0,2,3e-05,0.99517,416,tres rare
+Tsuga,heterophylla,Tsuga,6,5,0,0,0,6,3e-05,0.9952,417,tres rare
+Quercus,macrocarpa,Chêne,6,6,1,0,0,5,3e-05,0.99523,418,tres rare
+Diospyros,sp.,Plaqueminier,6,2,0,3,1,2,3e-05,0.99526,419,tres rare
+Clerodendrum,trichotomum var. fargesii,Clerodendron,6,6,1,0,0,5,3e-05,0.99529,420,tres rare
+Populus,lasiocarpa,Peuplier,5,5,0,0,0,5,2e-05,0.99531,421,tres rare
+Prunus,japonica,Cerisier à fleurs,5,5,1,0,3,1,2e-05,0.99533,422,tres rare
+Wollemia,nobilis,Pin,5,0,0,0,0,5,2e-05,0.99535,423,tres rare
+Acacia,sp.,Mimosa,5,5,1,0,2,2,2e-05,0.99537,424,tres rare
+Clerodendrum,sp.,Clerodendron,5,5,0,1,0,4,2e-05,0.99539,425,tres rare
+Quercus,ilicifolia,Chêne,5,3,0,0,0,5,2e-05,0.99541,426,tres rare
+Fagus,sp.,Hêtre,5,5,1,0,1,3,2e-05,0.99543,427,tres rare
+Quercus,alba,Chêne,5,4,0,0,0,5,2e-05,0.99545,428,tres rare
+Acer,davidii subsp. grosseri,Erable,5,4,1,0,0,4,2e-05,0.99547,429,tres rare
+Ehretia,sp.,Cabrillet,5,3,1,0,0,4,2e-05,0.99549,430,tres rare
+Taxus,baccata f. Aurea,If,5,5,0,0,0,5,2e-05,0.99551,431,tres rare
+Aralia,elata,Angélique,5,4,1,0,0,4,2e-05,0.99553,432,tres rare
+Styphnolobium,n. sp.,,5,5,5,0,0,0,2e-05,0.99555,433,tres rare
+Betula,pendula var. pendula,Bouleau,5,5,1,1,0,3,2e-05,0.99557,434,tres rare
+Salix,aurita,Saule,5,5,0,0,0,5,2e-05,0.99559,435,tres rare
+Picea,breweriana,Epicéa,5,1,0,0,0,5,2e-05,0.99561,436,tres rare
+Sycopsis,sinensis,Sycopsis,5,3,0,0,0,5,2e-05,0.99563,437,tres rare
+Hovenia,dulcis,Raisinier,5,1,0,0,0,5,2e-05,0.99565,438,tres rare
+Phellodendron,chinense,Phellodendron,5,1,0,0,0,5,2e-05,0.99567,439,tres rare
+Betula,utilis subsp. albosinensis,Bouleau,5,3,0,0,0,5,2e-05,0.99569,440,tres rare
+Pinus,halepensis,Pin,5,4,0,0,0,5,2e-05,0.99571,441,tres rare
+Celtis,jessoensis,Micocoulier,5,1,1,0,0,4,2e-05,0.99573,442,tres rare
+Catalpa,ovata,Catalpa,5,2,0,0,0,5,2e-05,0.99575,443,tres rare
+Abies,numidica,Sapin,5,2,0,0,0,5,2e-05,0.99577,444,tres rare
+Sorbus,x thuringiaca,Sorbier,5,3,0,0,0,5,2e-05,0.99579,445,tres rare
+Abies,alba,Sapin,5,0,0,0,0,5,2e-05,0.99581,446,tres rare
+Chamaecyparis,obtusa,Faux-cyprès,5,0,0,0,0,5,2e-05,0.99583,447,tres rare
+Fraxinus,quadrangulata,Frêne,5,1,0,0,0,5,2e-05,0.99585,448,tres rare
+Quercus,x kewensis,Chêne,5,4,4,0,0,1,2e-05,0.99587,449,tres rare
+Juniperus,x pfitzeriana,Genévrier,5,0,0,0,0,5,2e-05,0.99589,450,tres rare
+Salix,acutifolia,Saule,5,0,0,0,0,5,2e-05,0.99591,451,tres rare
+Rhododendron,arboreum,Rhododendron,5,5,0,0,0,5,2e-05,0.99593,452,tres rare
+Poliothyrsis,sinensis,Poliothyrsis,5,1,0,0,0,5,2e-05,0.99595,453,tres rare
+Butia,capitata,Palmier,5,3,0,0,3,2,2e-05,0.99597,454,tres rare
+Catalpa,xerubescens,Catalpa,5,5,0,0,0,5,2e-05,0.99599,455,tres rare
+Carya,ovata,Caryer,5,4,0,2,0,3,2e-05,0.99601,456,tres rare
+Ulmus,chenmoui,Orme,4,3,0,0,0,4,2e-05,0.99603,457,tres rare
+Trachycarpus,wagnerianus,Palmier,4,4,0,0,0,4,2e-05,0.99605,458,tres rare
+Acer,truncatum,Erable,4,4,3,0,0,1,2e-05,0.99607,459,tres rare
+Torreya,californica,Muscadier,4,2,0,0,0,4,2e-05,0.99609,460,tres rare
+Acer,triflorum,Erable,4,3,0,0,0,4,2e-05,0.99611,461,tres rare
+Prunus,nigra,Cerisier à fleurs,4,3,0,0,0,4,2e-05,0.99613,462,tres rare
+Cladrastis,sp.,Virgilier,4,4,0,0,0,4,2e-05,0.99615,463,tres rare
+Prunus,davidiana,Pêcher,4,2,0,0,0,4,2e-05,0.99617,464,tres rare
+Pyrus,Fleur n. sp.,Poirier,4,4,2,0,1,1,2e-05,0.99619,465,tres rare
+Zelkova,sinica,Orme de Sibérie,4,0,0,0,0,4,2e-05,0.99621,466,tres rare
+Abies,koreana,Sapin,4,0,0,0,0,4,2e-05,0.99623,467,tres rare
+Prunus,serotina,Cerisier à fleurs,4,2,0,0,0,4,2e-05,0.99625,468,tres rare
+Quercus,faginea,Chêne,4,0,0,0,0,4,2e-05,0.99627,469,tres rare
+Carpinus,turczaninowii,Charme,4,1,0,0,0,4,2e-05,0.99629,470,tres rare
+Pistacia,terebinthus,Pistachier,4,4,0,1,0,3,2e-05,0.99631,471,tres rare
+Quercus,x heterophylla,Chêne,4,0,0,0,0,4,2e-05,0.99633,472,tres rare
+Carya,sp.,Caryer,4,3,0,0,0,4,2e-05,0.99635,473,tres rare
+Catalpa,bungei,Catalpa,4,2,2,0,0,2,2e-05,0.99637,474,tres rare
+Cedrus,libani subsp. brevifolia,Cèdre,4,0,0,0,0,4,2e-05,0.99639,475,tres rare
+Cercidiphyllum,sp.,Arbre à caramel,4,4,0,0,0,4,2e-05,0.99641,476,tres rare
+Laburnum,sp.,Cytise,4,4,3,0,0,1,2e-05,0.99643,477,tres rare
+Laburnum,x watereri,Cytise,4,3,0,0,0,4,2e-05,0.99645,478,tres rare
+Buxus,balearica,Buis,4,3,0,0,0,4,2e-05,0.99647,479,tres rare
+Aria,sp.,,4,4,0,0,4,0,2e-05,0.99649,480,tres rare
+Laurus,sp.,Laurier,4,4,0,0,0,4,2e-05,0.99651,481,tres rare
+Betula,davurica,Bouleau,4,1,0,0,0,4,2e-05,0.99653,482,tres rare
+Photinia,sp.,Photinia,4,4,1,0,3,0,2e-05,0.99655,483,tres rare
+Larix,kaempferi,Mélèze,4,0,0,0,0,4,2e-05,0.99657,484,tres rare
+Maackia,amurensis,Maackie,4,3,0,0,0,4,2e-05,0.99659,485,tres rare
+Paliurus,spina-christi,Paliurus,4,1,0,0,0,4,2e-05,0.99661,486,tres rare
+Thujopsis,dolabrata,Hiba,4,1,0,0,0,4,2e-05,0.99663,487,tres rare
+Aesculus,x mutabilis,Marronnier,4,3,0,0,0,4,2e-05,0.99665,488,tres rare
+Magnolia,liliiflora,Magnolia,4,1,0,1,0,3,2e-05,0.99667,489,tres rare
+Magnolia,x brooklynensis,Magnolia,4,4,0,0,1,3,2e-05,0.99669,490,tres rare
+Magnolia,denudata,Magnolia,4,3,0,0,1,3,2e-05,0.99671,491,tres rare
+Malus,spectabilis,Pommier à fleurs,4,4,0,0,0,4,2e-05,0.99673,492,tres rare
+Trachycarpus,sp.,Palmier,4,4,1,0,0,3,2e-05,0.99675,493,tres rare
+Ulmus,minor var. vulgaris,Orme,4,4,3,0,0,1,2e-05,0.99677,494,tres rare
+Abies,cephalonica,Sapin,3,0,0,0,0,3,1e-05,0.99678,495,tres rare
+Malus,transitoria,Pommier à fleurs,3,0,0,0,0,3,1e-05,0.99679,496,tres rare
+Torreya,grandis,Muscadier,3,0,0,0,0,3,1e-05,0.9968,497,tres rare
+Picea,asperata,Epicéa,3,0,0,0,0,3,1e-05,0.99681,498,tres rare
+Liquidambar,orientalis,Copalme,3,0,0,0,0,3,1e-05,0.99682,499,tres rare
+Liquidambar,formosana,Copalme,3,3,0,0,0,3,1e-05,0.99683,500,tres rare
+Ostrya,sp.,,3,2,1,1,1,0,1e-05,0.99684,501,tres rare
+Liquidambar,acalycina,Copalme,3,0,0,0,0,3,1e-05,0.99685,502,tres rare
+Carpinus,caroliniana,Charme,3,3,2,0,0,1,1e-05,0.99686,503,tres rare
+Betula,lenta,Bouleau,3,2,0,0,0,3,1e-05,0.99687,504,tres rare
+Idesia,polycarpa,Idesia,3,2,0,0,0,3,1e-05,0.99688,505,tres rare
+Pinus,coulteri,Pin,3,1,0,0,0,3,1e-05,0.99689,506,tres rare
+Taxus,x media,If,3,1,0,0,0,3,1e-05,0.9969,507,tres rare
+Taiwania,cryptomerioides,Taiwania,3,0,0,0,0,3,1e-05,0.99691,508,tres rare
+Syringa,vulgaris,Lilas,3,2,0,1,0,2,1e-05,0.99692,509,tres rare
+Betula,maximowicziana,Bouleau,3,1,0,0,0,3,1e-05,0.99693,510,tres rare
+Malus,ioensis,Pommier à fleurs,3,3,0,0,0,3,1e-05,0.99694,511,tres rare
+Asimina,triloba,Asiminier,3,2,0,0,0,3,1e-05,0.99695,512,tres rare
+Phoenix,canariensis,Faux dattier,3,3,0,0,0,3,1e-05,0.99696,513,tres rare
+Malus,sieversii,Pommier à fruits,3,0,0,0,0,3,1e-05,0.99697,514,tres rare
+Salix,daphnoides,Saule,3,0,0,0,0,3,1e-05,0.99698,515,tres rare
+Paulownia,fortunei,Paulownia,3,3,3,0,0,0,1e-05,0.99699,516,tres rare
+Magnolia,delavayi,Magnolia,3,1,0,0,0,3,1e-05,0.997,517,tres rare
+Nyssa,sinensis,Tupélo,3,0,0,0,0,3,1e-05,0.99701,518,tres rare
+Alangium,sp.,Alangium,3,3,0,0,0,3,1e-05,0.99702,519,tres rare
+Nothofagus,obliqua,Nothofagus,3,1,0,0,0,3,1e-05,0.99703,520,tres rare
+Acer,obtusifolium,Erable,3,2,0,0,2,1,1e-05,0.99704,521,tres rare
+Acer,oblongum,Erable,3,3,0,0,0,3,1e-05,0.99705,522,tres rare
+Magnolia,sprengeri,Magnolia,3,0,0,0,0,3,1e-05,0.99706,523,tres rare
+Magnolia,tripetala,Magnolia,3,2,0,0,1,2,1e-05,0.99707,524,tres rare
+Viburnum,odoratissimum,Viorne,3,3,0,1,0,2,1e-05,0.99708,525,tres rare
+Tilia,americana var. heterophylla,Tilleul,3,1,0,0,0,3,1e-05,0.99709,526,tres rare
+Celtis,koraiensis,Micocoulier,3,2,0,0,0,3,1e-05,0.9971,527,tres rare
+Corylus,chinensis,Noisetier,3,0,0,0,0,3,1e-05,0.99711,528,tres rare
+Prunus,incisa,Cerisier à fleurs,3,3,1,0,0,2,1e-05,0.99712,529,tres rare
+Prunus,virginiana,Cerisier à fleurs,3,3,0,0,0,3,1e-05,0.99713,530,tres rare
+Populus,ciliata,Peuplier,3,1,1,0,0,2,1e-05,0.99714,531,tres rare
+Gymnocladus,chinensis,Arbre à savon,3,3,1,0,1,1,1e-05,0.99715,532,tres rare
+Aesculus,x neglecta,Marronnier,3,1,1,0,0,2,1e-05,0.99716,533,tres rare
+Aesculus,turbinata,Marronnier,3,0,0,0,0,3,1e-05,0.99717,534,tres rare
+Aesculus,californica,Marronnier,3,0,0,0,0,3,1e-05,0.99718,535,tres rare
+Pinus,radiata,Pin,3,2,0,0,0,3,1e-05,0.99719,536,tres rare
+Robinia,hispida,,3,3,0,0,0,3,1e-05,0.9972,537,tres rare
+Pinus,cembra,Pin,3,1,0,0,0,3,1e-05,0.99721,538,tres rare
+Quercus,nigra,Chêne,3,2,0,0,0,3,1e-05,0.99722,539,tres rare
+Carya,cordiformis,Caryer,3,0,0,0,0,3,1e-05,0.99723,540,tres rare
+Hesperocyparis,macrocarpa,Cyprès,3,2,0,0,0,3,1e-05,0.99724,541,tres rare
+Euonymus,sp.,Fusain,3,3,0,1,0,2,1e-05,0.99725,542,tres rare
+Picea,sitchensis,Epicéa,3,0,0,0,0,3,1e-05,0.99726,543,tres rare
+Pinus,banksiana,Pin,3,0,0,0,0,3,1e-05,0.99727,544,tres rare
+Celtis,labilis,Micocoulier,3,1,2,0,0,1,1e-05,0.99728,545,tres rare
+Quercus,serrata,Chêne,3,2,0,0,0,3,1e-05,0.99729,546,tres rare
+Picea,glauca,Epicéa,3,1,0,0,0,3,1e-05,0.9973,547,tres rare
+Pistacia,chinensis,Pistachier,3,1,0,0,1,2,1e-05,0.99731,548,tres rare
+Picea,engelmannii,Epicéa,3,1,0,0,0,3,1e-05,0.99732,549,tres rare
+Pittosporum,sp.,,3,3,0,0,0,3,1e-05,0.99733,550,tres rare
+Chimonanthus,praecox,Chimonanthe,3,2,0,0,0,3,1e-05,0.99734,551,tres rare
+Cephalotaxus,sp.,,3,2,0,0,0,3,1e-05,0.99735,552,tres rare
+Chamaerops,humilis,Palmier,3,3,0,0,0,3,1e-05,0.99736,553,tres rare
+Brahea,armata,Palmier,3,3,0,0,0,3,1e-05,0.99737,554,tres rare
+Buddleja,davidii,Buddleja,3,3,0,0,1,2,1e-05,0.99738,555,tres rare
+Caragana,arborescens,Caraganier,3,3,0,0,1,2,1e-05,0.99739,556,tres rare
+Catalpa,x erubescens,Catalpa,3,0,0,0,0,3,1e-05,0.9974,557,tres rare
+Catalpa,speciosa,Catalpa,3,3,0,0,1,2,1e-05,0.99741,558,tres rare
+Tilia,miqueliana,Tilleul,3,1,0,0,0,3,1e-05,0.99742,559,tres rare
+Tamarix,tetrandra,Tamaris,3,3,0,0,0,3,1e-05,0.99743,560,tres rare
+Ailanthus,sp.,,3,3,1,0,1,1,1e-05,0.99744,561,tres rare
+Aesculus,chinensis var. wilsonii,Marronnier,3,0,0,0,0,3,1e-05,0.99745,562,tres rare
+Tilia,chinensis,Tilleul,3,0,0,0,0,3,1e-05,0.99746,563,tres rare
+Salix,purpurea,Saule,2,1,0,0,0,2,1e-05,0.99747,564,tres rare
+Sequoiadendron,sp.,,2,2,0,0,0,2,1e-05,0.99748,565,tres rare
+Syringa,sp.,Lilas,2,2,0,0,0,2,1e-05,0.99749,566,tres rare
+Malus,hupehensis,Pommier,2,2,0,0,0,2,1e-05,0.9975,567,tres rare
+Parrotia,subaequalis,Parrotie,2,0,0,0,0,2,1e-05,0.99751,568,tres rare
+Araucaria,sp.,Araucaria,2,2,0,0,0,2,1e-05,0.99752,569,tres rare
+Araucaria,angustifolia,Araucaria,2,0,0,0,0,2,1e-05,0.99753,570,tres rare
+Salix,humilis var. microphylla,Saule,2,0,0,0,0,2,1e-05,0.99754,571,tres rare
+Betula,alleghaniensis,Bouleau,2,0,0,0,0,2,1e-05,0.99755,572,tres rare
+Malus,communis,,2,0,0,0,2,0,1e-05,0.99756,573,tres rare
+Pinus,contorta var. latifolia,Pin,2,0,0,0,0,2,1e-05,0.99757,574,tres rare
+Luma,chequen,Myrte du Chili,2,2,0,2,0,0,1e-05,0.99758,575,tres rare
+Taxodium,distichum var. imbricatum,Cyprès Chauve,2,0,0,0,0,2,1e-05,0.99759,576,tres rare
+Ligustrum,vulgare,Troene,2,0,0,0,0,2,1e-05,0.9976,577,tres rare
+Toxicodendron,vernicifluum,Sumac,2,0,0,0,0,2,1e-05,0.99761,578,tres rare
+Torreya,sp.,Muscadier,2,2,0,0,0,2,1e-05,0.99762,579,tres rare
+Tilia,x flaccida,Tilleul,2,0,0,0,0,2,1e-05,0.99763,580,tres rare
+Ulmus,parviflora,,2,2,0,0,0,2,1e-05,0.99764,581,tres rare
+x Cupressocyparis,sp.,Cyprès,2,2,0,2,0,0,1e-05,0.99765,582,tres rare
+Sorbus,vestita,Sorbier,2,1,0,0,0,2,1e-05,0.99766,583,tres rare
+Sorbus,scalaris,Sorbier,2,0,0,0,0,2,1e-05,0.99767,584,tres rare
+Ulmus,campestre,,2,0,0,0,0,2,1e-05,0.99768,585,tres rare
+Sorbus,hybrida,Sorbier,2,0,0,0,0,2,1e-05,0.99769,586,tres rare
+Sorbus,discolor,Sorbier,2,2,2,0,0,0,1e-05,0.9977,587,tres rare
+Carpinus,cordata,Charme,2,1,2,0,0,0,1e-05,0.99771,588,tres rare
+Larix,x marschlinsii,Mélèze,2,0,0,0,0,2,1e-05,0.99772,589,tres rare
+Ostrya,virginiana,Ostryer,2,1,1,0,0,1,1e-05,0.99773,590,tres rare
+Zanthoxylum,alatum,Poivrier,2,2,0,0,0,2,1e-05,0.99774,591,tres rare
+Abies,grandis,Sapin,2,1,0,0,0,2,1e-05,0.99775,592,tres rare
+Abies,cilicica,Sapin,2,0,0,0,0,2,1e-05,0.99776,593,tres rare
+Malus,x atrosanguinea,Pommier à fleurs,2,2,0,0,1,1,1e-05,0.99777,594,tres rare
+Melia,sp.,,2,2,0,0,1,1,1e-05,0.99778,595,tres rare
+Abies,homolepis,Sapin,2,0,0,0,0,2,1e-05,0.99779,596,tres rare
+Tilia,oliveri,Tilleul,2,0,0,0,0,2,1e-05,0.9978,597,tres rare
+Ulmus,davidiana,Orme,2,0,0,0,0,2,1e-05,0.99781,598,tres rare
+Acer,maximowiczianum,Erable,2,1,1,0,0,1,1e-05,0.99782,599,tres rare
+Tsuga,canadensis,Tsuga,2,1,0,0,0,2,1e-05,0.99783,600,tres rare
+Phoenix,sp.,,2,2,0,0,0,2,1e-05,0.99784,601,tres rare
+Betula,medwediewii,Bouleau,2,1,0,0,0,2,1e-05,0.99785,602,tres rare
+Pinus,densiflora,Pin,2,0,0,0,0,2,1e-05,0.99786,603,tres rare
+Juglans,cinerea,Noyer,2,0,0,0,0,2,1e-05,0.99787,604,tres rare
+Juglans,major,Noyer,2,0,0,0,0,2,1e-05,0.99788,605,tres rare
+Platanus,acerifolia,,2,2,0,0,0,2,1e-05,0.99789,606,tres rare
+Picea,glehnii,Epicéa,2,0,0,0,0,2,1e-05,0.9979,607,tres rare
+Podocarpus,macrophyllus,Podocarpus,2,0,0,0,0,2,1e-05,0.99791,608,tres rare
+Fraxinus,mandshurica,Frêne,2,0,0,0,0,2,1e-05,0.99792,609,tres rare
+Fraxinus,sieboldiana,Frêne à fleurs,2,0,0,0,0,2,1e-05,0.99793,610,tres rare
+Koelreuteria,bipinnata,Savonnier,2,0,0,0,0,2,1e-05,0.99794,611,tres rare
+Celtis,laevigata,Micocoulier,2,2,1,0,1,0,1e-05,0.99795,612,tres rare
+Pittosporum,heterophyllum,Oranger de Chine,2,2,0,0,0,2,1e-05,0.99796,613,tres rare
+Bischofia,javanica,Bischofia,2,1,0,0,0,2,1e-05,0.99797,614,tres rare
+Broussonetia,kazinoki,Mûrier,2,1,0,1,0,1,1e-05,0.99798,615,tres rare
+Chaenomeles,cathayensis,Cognassier,2,0,0,0,0,2,1e-05,0.99799,616,tres rare
+Celtis,tenuifolia,Micocoulier,2,0,0,0,0,2,1e-05,0.998,617,tres rare
+Ceratonia,siliqua,Caroubier,2,2,0,0,0,2,1e-05,0.99801,618,tres rare
+Sophora,flavescens,Sophora flavescens,2,0,0,1,0,1,1e-05,0.99802,619,tres rare
+Sophora,sp.,,2,2,2,0,0,0,1e-05,0.99803,620,tres rare
+Callistemon,viminalis,Callistemon,2,2,0,2,0,0,1e-05,0.99804,621,tres rare
+Betula,x caerulea,Bouleau,2,0,0,0,0,2,1e-05,0.99805,622,tres rare
+Quercus,ithaburensis var. macrolepis,Chêne,2,0,0,0,0,2,1e-05,0.99806,623,tres rare
+Corylus,americana,Noisetier,2,0,0,0,0,2,1e-05,0.99807,624,tres rare
+Cordyline,australis,Cordyline,2,2,0,0,0,2,1e-05,0.99808,625,tres rare
+Juniperus,chinensis,Genévrier,2,0,0,0,0,2,1e-05,0.99809,626,tres rare
+Pinus,sylvestris var. sylvestris,Pin,2,0,0,0,0,2,1e-05,0.9981,627,tres rare
+Pinus,sabiniana,Pin,2,0,0,0,0,2,1e-05,0.99811,628,tres rare
+Pinus,rigida,Pin,2,0,0,0,0,2,1e-05,0.99812,629,tres rare
+Kalopanax,septemlobus,Kalopanax,2,0,0,0,0,2,1e-05,0.99813,630,tres rare
+Exochorda,racemosa subsp. giraldii,Exochorde,2,1,0,0,0,2,1e-05,0.99814,631,tres rare
+Juniperus,sabina,Genévrier,2,0,0,0,0,2,1e-05,0.99815,632,tres rare
+Populus,trichocarpa,Peuplier,2,1,0,0,0,2,1e-05,0.99816,633,tres rare
+Ficus,benjamina,Ficus,2,2,0,0,2,0,1e-05,0.99817,634,tres rare
+Prunus,curdica,Prunier à fruits,2,0,0,0,0,2,1e-05,0.99818,635,tres rare
+Quercus,mongolica,Chêne,2,1,0,0,0,2,1e-05,0.99819,636,tres rare
+Crataegus,x sorbifolia,Aubépine,2,0,0,0,0,2,1e-05,0.9982,637,tres rare
+Prunus,americana,,2,2,0,0,2,0,1e-05,0.99821,638,tres rare
+Platycarya,strobilacea,Platycarya,2,1,1,0,0,1,1e-05,0.99822,639,tres rare
+Picea,smithiana,Epicéa,2,0,0,0,0,2,1e-05,0.99823,640,tres rare
+Magnolia,acuminata,Magnolia,2,0,0,0,0,2,1e-05,0.99824,641,tres rare
+Quercus,marilandica,Chêne,2,2,0,0,0,2,1e-05,0.99825,642,tres rare
+Chamaecyparis,humilis,Faux-cyprès,2,1,0,1,0,1,1e-05,0.99826,643,tres rare
+Castanea,dentata,Châtaignier,2,1,0,0,1,1,1e-05,0.99827,644,tres rare
+Chaenomeles,sp.,Cognassier du Japon,2,1,0,0,2,0,1e-05,0.99828,645,tres rare
+Quercus,rysophylla,Chêne,2,1,0,0,0,2,1e-05,0.99829,646,tres rare
+Crataegus,coccinioides,Aubépine,2,0,0,0,0,2,1e-05,0.9983,647,tres rare
+Crataegus,viridis,Aubépine,2,0,0,0,0,2,1e-05,0.99831,648,tres rare
+Fraxinus,Ianuginosa,Frêne à fleurs,2,0,0,0,0,2,1e-05,0.99832,649,tres rare
+Frangula,alnus,Bourdaine,2,2,0,0,2,0,1e-05,0.99833,650,tres rare
+Fraxinus,angustifolia subsp. oxycarpa,Frêne,2,0,0,0,0,2,1e-05,0.99834,651,tres rare
+Quercus,augustinii,Chêne,2,1,0,0,0,2,1e-05,0.99835,652,tres rare
+Pterocarya,x rehderiana,Pterocarya,2,1,0,0,0,2,1e-05,0.99836,653,tres rare
+Eucalyptus,parvula,Eucalyptus,2,1,0,0,0,2,1e-05,0.99837,654,tres rare
+Diospyros,duclouxii,Plaqueminier,2,0,0,0,0,2,1e-05,0.99838,655,tres rare
+Hemiptelea,davidii,Ormeau épineux,2,0,0,0,0,2,1e-05,0.99839,656,tres rare
+Prunus,persica var.nucipersica,Pêcher,2,2,0,0,1,1,1e-05,0.9984,657,tres rare
+Ginkgo,sp.,,2,2,0,0,1,1,1e-05,0.99841,658,tres rare
+Elaeagnus,umbellata,Eleagnus - Chalef,2,2,0,0,1,1,1e-05,0.99842,659,tres rare
+Elaeagnus,sp.,Eleagnus - Chalef,2,2,0,0,0,2,1e-05,0.99843,660,tres rare
+Ehretia,acuminata var. obovata,Cabrillet,2,1,0,0,0,2,1e-05,0.99844,661,tres rare
+Ehretia,macrophylla,,2,2,0,0,0,2,1e-05,0.99845,662,tres rare
+Fontanesia,fortunei,Fontanesia,2,1,0,0,0,2,1e-05,0.99846,663,tres rare
+Prunus,pendula,,2,1,0,0,0,2,1e-05,0.99847,664,tres rare
+Fraxinus,chinensis subsp. rhynchophylla,Frêne,2,0,0,0,0,2,1e-05,0.99848,665,tres rare
+Pseudocydonia,sinensis,Cognassier,2,2,1,0,0,1,1e-05,0.99849,666,tres rare
+Prunus,itosakura,Cerisier à fleurs,2,1,0,0,0,2,1e-05,0.9985,667,tres rare
+Fraxinus,bungeana,Frêne,2,0,0,0,0,2,1e-05,0.99851,668,tres rare
+Crataegus,monogyna var. monogyna,Aubépine,2,2,0,1,1,0,1e-05,0.99852,669,tres rare
+Prunus,glandulosa,Cerisier à fleurs,2,2,0,0,1,1,1e-05,0.99853,670,tres rare
+Crataegus,aprica,Aubépine,2,0,0,0,0,2,1e-05,0.99854,671,tres rare
+Eriobotrya,sp.,,2,2,0,0,0,2,1e-05,0.99855,672,tres rare
+Acer,oliverianum,Erable,2,0,0,0,0,2,1e-05,0.99856,673,tres rare
+Magnolia,macrophylla,Magnolia,2,1,0,0,0,2,1e-05,0.99857,674,tres rare
+Alnus,rubra,Aulne,2,0,0,0,0,2,1e-05,0.99858,675,tres rare
+x Crataemespilus,grandiflora,Aubépine hybride,2,0,0,0,0,2,1e-05,0.99859,676,tres rare
+Magnolia,x proctoriana,Magnolia,2,0,0,0,0,2,1e-05,0.9986,677,tres rare
+Nothofagus,antarctica var. uliginosa,Nothofagus,2,2,0,0,0,2,1e-05,0.99861,678,tres rare
+Abies,nebrodensis,Sapin,2,0,0,0,0,2,1e-05,0.99862,679,tres rare
+Acer,n. sp.,,2,2,1,0,0,1,1e-05,0.99863,680,tres rare
+Acer,heldreichii,Erable,2,2,1,0,0,1,1e-05,0.99864,681,tres rare
+Acer,sempervirens,Erable,2,0,0,0,0,2,1e-05,0.99865,682,tres rare
+Aesculus,sylvatica,Marronnier,2,0,0,0,0,2,1e-05,0.99866,683,tres rare
+Tilia,kiusiana,Tilleul,2,0,0,0,1,1,1e-05,0.99867,684,tres rare
+Tetradium,sp.,Arbre à miel,2,1,0,0,0,2,1e-05,0.99868,685,tres rare
+Washingtonia,filifera,Palmier,2,2,0,0,0,2,1e-05,0.99869,686,tres rare
+Abies,pardei,Sapin,1,0,0,0,0,1,0.0,0.99869,687,tres rare
+Abies,recurvata,Sapin,1,0,0,0,0,1,0.0,0.99869,688,tres rare
+Acca,sellowiana,Goyavier,1,1,0,1,0,0,0.0,0.99869,689,tres rare
+Acer,circinatum,Erable,1,0,0,0,0,1,0.0,0.99869,690,tres rare
+Acer,coriaceifolium,Erable,1,0,0,0,0,1,0.0,0.99869,691,tres rare
+Acer,diabolicum,Erable,1,0,0,0,0,1,0.0,0.99869,692,tres rare
+Acer,discolor,Erable,1,0,0,0,0,1,0.0,0.99869,693,tres rare
+Ulmus,procera,Orme,1,0,0,0,0,1,0.0,0.99869,694,tres rare
+Umbellularia,californica,Laurier de Californie,1,0,0,0,0,1,0.0,0.99869,695,tres rare
+Vitex,agnus-castus,Gatillier,1,1,0,0,0,1,0.0,0.99869,696,tres rare
+Vitex,sp.,,1,1,0,0,0,1,0.0,0.99869,697,tres rare
+Washingtonia,robusta,Palmier,1,1,0,0,0,1,0.0,0.99869,698,tres rare
+Aesculus,chinensis,Marronnier,1,1,0,0,0,1,0.0,0.99869,699,tres rare
+Aesculus,glabra,Marronnier,1,0,0,0,0,1,0.0,0.99869,700,tres rare
+Tilia,mandshurica,Tilleul,1,0,0,0,0,1,0.0,0.99869,701,tres rare
+Acer,x coriaceum,Erable,1,1,0,0,0,1,0.0,0.99869,702,tres rare
+Acer,x durettii,Erable,1,1,0,0,0,1,0.0,0.99869,703,tres rare
+Tamarix,parviflora,Tamaris,1,1,0,0,0,1,0.0,0.99869,704,tres rare
+Acer,opalus subsp. obtusatum,Erable,1,0,0,0,0,1,0.0,0.99869,705,tres rare
+Ailanthus,vilmoriniana,Ailante,1,0,0,0,0,1,0.0,0.99869,706,tres rare
+Alnus,formosana,,1,0,0,0,0,1,0.0,0.99869,707,tres rare
+Alnus,serrulata,Aulne,1,0,0,0,0,1,0.0,0.99869,708,tres rare
+Acer,heldreichii subsp. Trautvetteri,Erable,1,0,0,0,0,1,0.0,0.99869,709,tres rare
+Acer,hyrcanum,Erable,1,0,0,0,0,1,0.0,0.99869,710,tres rare
+Magnolia,hypoleuca,Magnolia,1,0,0,0,0,1,0.0,0.99869,711,tres rare
+Magnolia,officinalis,Magnolia,1,0,0,0,0,1,0.0,0.99869,712,tres rare
+Magnolia,sieboldii,Magnolia,1,1,0,0,0,1,0.0,0.99869,713,tres rare
+Magnolia,virginiana,Magnolia,1,1,0,0,0,1,0.0,0.99869,714,tres rare
+Nothofagus,obliqua var. macrocarpa,Nothofagus,1,0,0,0,0,1,0.0,0.99869,715,tres rare
+Nothofagus,sp.,Nothofagus,1,1,0,0,0,1,0.0,0.99869,716,tres rare
+Nyssa,aquatica,Tupélo,1,0,0,0,0,1,0.0,0.99869,717,tres rare
+Nyssa,sylvatica var. biflora,Tupélo,1,0,0,0,0,1,0.0,0.99869,718,tres rare
+Hovenia,tomentella,Raisinier,1,0,0,0,0,1,0.0,0.99869,719,tres rare
+Poncirus,sp.,,1,1,0,0,0,1,0.0,0.99869,720,tres rare
+Populus,balsamifera,Peuplier,1,0,0,0,0,1,0.0,0.99869,721,tres rare
+Populus,koreana,Peuplier,1,1,0,0,0,1,0.0,0.99869,722,tres rare
+Populus,laurifolia,Peuplier,1,0,0,0,0,1,0.0,0.99869,723,tres rare
+Fraxinus,xanthoxyloides,Frêne à fleurs,1,0,0,0,0,1,0.0,0.99869,724,tres rare
+Garrya,elliptica,Garrya,1,0,0,0,0,1,0.0,0.99869,725,tres rare
+Genista,sp.,Genêt,1,1,0,1,0,0,0.0,0.99869,726,tres rare
+Gleditsia,japonica,Fevier,1,0,0,0,0,1,0.0,0.99869,727,tres rare
+Hamamelis,virginiana,Hamamélis,1,1,0,0,0,1,0.0,0.99869,728,tres rare
+Diospyros,rhombifolia,Plaqueminier,1,0,0,0,0,1,0.0,0.99869,729,tres rare
+Elaeagnus,commutata,Eleagnus - Chalef,1,0,0,0,0,1,0.0,0.99869,730,tres rare
+Eriobotrya,japonicum,,1,1,0,0,1,0,0.0,0.99869,731,tres rare
+Prunus,rufa,Cerisier à fleurs,1,0,0,0,0,1,0.0,0.99869,732,tres rare
+Prunus,triloba,Cerisier à fleurs,1,1,0,0,0,1,0.0,0.99869,733,tres rare
+Prunus,x gondouinii,Cerisier à fleurs,1,1,0,0,0,1,0.0,0.99869,734,tres rare
+Cupressus,macrocarpa,,1,0,0,0,0,1,0.0,0.99869,735,tres rare
+Daphniphyllum,himalense var. macropodum,Daphniphyllum,1,0,0,0,0,1,0.0,0.99869,736,tres rare
+Fraxinus,chinensis,Frêne,1,0,0,0,0,1,0.0,0.99869,737,tres rare
+Prunus,lusitanica subsp.azorica,Laurier des Açores,1,1,0,0,0,1,0.0,0.99869,738,tres rare
+Prunus,mandshurica,Cerisier à fleurs,1,1,0,0,0,1,0.0,0.99869,739,tres rare
+Ficus,palmata,Ficus,1,0,0,0,0,1,0.0,0.99869,740,tres rare
+Fontanesia,sp.,,1,1,0,0,0,1,0.0,0.99869,741,tres rare
+Fraxinus,angustifolia subsp. syriacus,Frêne,1,1,0,0,1,0,0.0,0.99869,742,tres rare
+Crataegus,japonicum,,1,1,0,0,0,1,0.0,0.99869,743,tres rare
+Crataegus,n. sp.,,1,1,0,0,0,1,0.0,0.99869,744,tres rare
+Crataegus,pinnatifida,Aubépine,1,0,0,0,0,1,0.0,0.99869,745,tres rare
+Crataegus,rotundifolia var. aboriginum,Aubepine,1,0,0,0,0,1,0.0,0.99869,746,tres rare
+Crataegus,spathulata,Aubépine,1,0,0,0,0,1,0.0,0.99869,747,tres rare
+Crataegus,venustula,Aubépine,1,0,0,0,0,1,0.0,0.99869,748,tres rare
+Quercus,canbyi,Chêne,1,0,0,0,0,1,0.0,0.99869,749,tres rare
+Crataegus,baccata,,1,1,0,0,1,0,0.0,0.99869,750,tres rare
+Crataegus,calpodendron,Aubépine,1,0,0,0,0,1,0.0,0.99869,751,tres rare
+Crataegus,canbyi,Aubépine,1,0,0,0,0,1,0.0,0.99869,752,tres rare
+Crataegus,champlainensis,Aubepine,1,0,0,0,0,1,0.0,0.99869,753,tres rare
+Crataegus,chrysocarpa var. phoenicea,Aubépine,1,0,0,0,0,1,0.0,0.99869,754,tres rare
+Crataegus,crus-galli,Aubépine,1,0,0,0,0,1,0.0,0.99869,755,tres rare
+Pterostyrax,corymbosa,Pterostyrax,1,0,0,0,0,1,0.0,0.99869,756,tres rare
+Punica,sp.,,1,1,0,0,1,0,0.0,0.99869,757,tres rare
+Pyrus,communis subsp. pyraster ((L.) Ehrh. ),Poirier,1,0,0,0,0,1,0.0,0.99869,758,tres rare
+Pyrus,ussuriensis,Poirier à fruits,1,0,0,0,0,1,0.0,0.99869,759,tres rare
+Quercus,alnifolia,Chêne,1,0,0,0,0,1,0.0,0.99869,760,tres rare
+Quercus,berberidifolia,Chêne,1,0,0,0,0,1,0.0,0.99869,761,tres rare
+Quercus,canariensis,Chêne,1,1,0,0,0,1,0.0,0.99869,762,tres rare
+Eriolobus,trilobata,,1,1,1,0,0,0,0.0,0.99869,763,tres rare
+Eucalyptus,pauciflora subsp. niphophila,Eucalyptus,1,0,0,0,0,1,0.0,0.99869,764,tres rare
+Pseudotsuga,menziesii var. glauca,Sapin Douglas,1,0,0,0,0,1,0.0,0.99869,765,tres rare
+Pterocarya,rhoifolia,Pterocarya,1,0,0,0,0,1,0.0,0.99869,766,tres rare
+Pteroceltis,tatarinowii,Pteroceltis,1,0,0,0,0,1,0.0,0.99869,767,tres rare
+Corylus,fargesii,Noisetier,1,0,0,0,0,1,0.0,0.99869,768,tres rare
+Corylus,x colurnoides,Noisetier,1,0,0,0,0,1,0.0,0.99869,769,tres rare
+Cotinus,obovatus,Fustet d'' Amérique,1,1,0,0,0,1,0.0,0.99869,770,tres rare
+Cotoneaster,franchetii,,1,1,0,1,0,0,0.0,0.99869,771,tres rare
+Crataegus,ambigua,Aubépine,1,0,0,0,0,1,0.0,0.99869,772,tres rare
+Quercus,pontica,Chêne,1,1,0,0,0,1,0.0,0.99869,773,tres rare
+Quercus,rotundifolia,Chêne,1,0,0,0,0,1,0.0,0.99869,774,tres rare
+Cornus,hongkongensis,Cornouiller,1,0,0,0,0,1,0.0,0.99869,775,tres rare
+Cornus,kousa var. chinensis,Cornouiller,1,1,0,0,0,1,0.0,0.99869,776,tres rare
+Cornus,macrophylla,Cornouiller,1,1,0,0,0,1,0.0,0.99869,777,tres rare
+Cornus,quinquenervis,Cornouiller,1,0,0,0,0,1,0.0,0.99869,778,tres rare
+Quercus,falcata,Chêne,1,0,0,0,0,1,0.0,0.99869,779,tres rare
+Pinus,ponderosa,Pin,1,0,0,0,0,1,0.0,0.99869,780,tres rare
+Pinus,ponderosa subsp. scopulorum,Pin,1,0,0,0,0,1,0.0,0.99869,781,tres rare
+Juniperus,chinensis var. sargentii,Genévrier,1,0,0,0,0,1,0.0,0.99869,782,tres rare
+Juniperus,oxycedrus,Genévrier,1,0,0,0,0,1,0.0,0.99869,783,tres rare
+Juniperus,thurifera,Genévrier,1,0,0,0,0,1,0.0,0.99869,784,tres rare
+Juniperus,x media,,1,0,0,0,0,1,0.0,0.99869,785,tres rare
+Keteleeria,fortunei,Kétéleeria,1,0,0,0,0,1,0.0,0.99869,786,tres rare
+Exochorda,x macrantha,Arbre aux perles,1,1,0,0,0,1,0.0,0.99869,787,tres rare
+Fagus,engleriana,Hêtre,1,0,0,0,0,1,0.0,0.99869,788,tres rare
+Fagus,japonica,Hêtre,1,1,0,0,0,1,0.0,0.99869,789,tres rare
+Fagus,purpurea,,1,0,0,0,0,1,0.0,0.99869,790,tres rare
+Fagus,sylvatica f. tortuosa (Faux de Verzy Group),Hêtre,1,0,0,0,0,1,0.0,0.99869,791,tres rare
+Fagus,taurica,Hêtre,1,0,0,0,0,1,0.0,0.99869,792,tres rare
+Ficus,n. sp.,,1,1,0,0,1,0,0.0,0.99869,793,tres rare
+Populus,pamirica,Peuplier,1,0,0,0,0,1,0.0,0.99869,794,tres rare
+Prunus,domestica subsp. insititia,Prunier à fruits,1,0,0,0,0,1,0.0,0.99869,795,tres rare
+Euscaphis,japonica,Euscaphis,1,1,0,0,0,1,0.0,0.99869,796,tres rare
+Hesperocyparis,arizonica,Cyprès de l''Arizona'',1,0,0,0,0,1,0.0,0.99869,797,tres rare
+Quercus,lanata,Chêne,1,0,0,0,0,1,0.0,0.99869,798,tres rare
+Quercus,muehlenbergii,Chêne,1,0,0,0,0,1,0.0,0.99869,799,tres rare
+Quercus,petraea subsp. dschorochensis,Chêne,1,1,0,0,0,1,0.0,0.99869,800,tres rare
+Crataegus,x lettermanii,Aubépine,1,0,0,0,0,1,0.0,0.99869,801,tres rare
+Cryptomeria,sp.,,1,1,0,0,0,1,0.0,0.99869,802,tres rare
+Cunninghamia,lanceolata var. konishii,Cunninghamia,1,0,0,0,0,1,0.0,0.99869,803,tres rare
+Cupressus,bakeri,Cyprès,1,0,0,0,0,1,0.0,0.99869,804,tres rare
+Cupressus,chengiana,Cyprès,1,0,0,0,0,1,0.0,0.99869,805,tres rare
+Cupressus,funebris,Cyprès,1,1,0,0,0,1,0.0,0.99869,806,tres rare
+Quercus,crassifolia,Chêne,1,0,0,0,0,1,0.0,0.99869,807,tres rare
+Robinia,pseudocamellia,,1,1,0,0,1,0,0.0,0.99869,808,tres rare
+Sabal,minor,Palmier,1,1,0,0,0,1,0.0,0.99869,809,tres rare
+Carpinus,coreana,Charme,1,0,0,0,0,1,0.0,0.99869,810,tres rare
+Carya,aquatica,Caryer,1,0,0,0,0,1,0.0,0.99869,811,tres rare
+Castanea,mollissima,Châtaignier,1,0,0,0,0,1,0.0,0.99869,812,tres rare
+Castanopsis,fargesii,Castanopsis,1,0,0,0,0,1,0.0,0.99869,813,tres rare
+Quercus,trojana,Chêne,1,0,0,0,0,1,0.0,0.99869,814,tres rare
+Quercus,x libanerris,,1,0,0,0,0,1,0.0,0.99869,815,tres rare
+Rhamnus,cathartica,Nerprun,1,0,0,0,0,1,0.0,0.99869,816,tres rare
+Rhamnus,sp.,Nerprun,1,0,0,0,0,1,0.0,0.99869,817,tres rare
+Rhus,sp.,Sumac,1,0,0,0,0,1,0.0,0.99869,818,tres rare
+Rhus,verniciflua,,1,0,0,0,0,1,0.0,0.99869,819,tres rare
+Robinia,ornus,,1,1,1,0,0,0,0.0,0.99869,820,tres rare
+Picea,schrenkiana,Epicéa,1,0,0,0,0,1,0.0,0.99869,821,tres rare
+Picea,wilsonii,Epicéa,1,0,0,0,0,1,0.0,0.99869,822,tres rare
+Maclura,tricuspidata,Cudranier,1,0,0,0,0,1,0.0,0.99869,823,tres rare
+Magnolia,acuminata subsp. subcordata,Magnolia,1,0,0,0,0,1,0.0,0.99869,824,tres rare
+Picea,koyamai,Epicéa,1,0,0,0,0,1,0.0,0.99869,825,tres rare
+Picea,likiangensis var. montigena,Epicéa,1,0,0,0,0,1,0.0,0.99869,826,tres rare
+Platycladus,sp.,,1,1,0,0,0,1,0.0,0.99869,827,tres rare
+Podocarpus,matudae,Podocarpus,1,0,0,0,0,1,0.0,0.99869,828,tres rare
+Fraxinus,latifolia,Frêne,1,0,0,0,0,1,0.0,0.99869,829,tres rare
+Fraxinus,velutina,Frêne,1,0,0,0,0,1,0.0,0.99869,830,tres rare
+Pinus,tabuliformis,Pin,1,0,0,0,0,1,0.0,0.99869,831,tres rare
+Plagianthus,betulinus,Plagianthe,1,0,0,0,0,1,0.0,0.99869,832,tres rare
+Plagianthus,regius,Plagianthe,1,0,0,0,0,1,0.0,0.99869,833,tres rare
+Platanus,n. sp.,,1,1,1,0,0,0,0.0,0.99869,834,tres rare
+Pinus,parviflora,Pin,1,0,0,0,0,1,0.0,0.99869,835,tres rare
+Chionanthus,virginicus,Chionanthe,1,0,0,0,0,1,0.0,0.99869,836,tres rare
+Quercus,suber subsp. Occidentalis,Chêne,1,1,0,0,0,1,0.0,0.99869,837,tres rare
+Celtis,occidentalis var cordata,Micocoulier,1,0,0,0,0,1,0.0,0.99869,838,tres rare
+Celtis,occidentalis var. reticulata,Micocoulier,1,0,0,0,0,1,0.0,0.99869,839,tres rare
+Broussonetia,sp.,,1,1,0,0,0,1,0.0,0.99869,840,tres rare
+Brucea,javanica,Brucea javanica,1,0,0,0,0,1,0.0,0.99869,841,tres rare
+Caragana,pekinensis,Caragana,1,1,0,0,0,1,0.0,0.99869,842,tres rare
+Sophora,microphylla,Styphnolobium microphylla ''Hilsop'',1,1,0,0,0,1,0.0,0.99869,843,tres rare
+Betula,occidentalis,,1,0,0,0,0,1,0.0,0.99869,844,tres rare
+Betula,tianschanica,Bouleau,1,0,0,0,0,1,0.0,0.99869,845,tres rare
+Bischofia,polycarpa,Bischofia,1,1,0,0,0,1,0.0,0.99869,846,tres rare
+Salix,magnifica,Saule,1,0,0,0,0,1,0.0,0.99869,847,tres rare
+Salix,matsudana,Saule,1,0,0,0,0,1,0.0,0.99869,848,tres rare
+Salix,pyrifolia,,1,1,0,0,0,1,0.0,0.99869,849,tres rare
+Sapindus,mukorossi,Chêne,1,1,0,1,0,0,0.0,0.99869,850,tres rare
+Schinus,molle,Faux-poivrier,1,1,0,0,0,1,0.0,0.99869,851,tres rare
+Sequoiadendron,sempervirens,,1,1,0,0,0,1,0.0,0.99869,852,tres rare
+Celtis,biondii,Micocoulier,1,0,0,0,0,1,0.0,0.99869,853,tres rare
+Celtis,bungeana,Micocoulier,1,0,0,0,0,1,0.0,0.99869,854,tres rare
+Salix,exigua,Saule,1,0,0,0,0,1,0.0,0.99869,855,tres rare
+Salix,hookeriana,Saule,1,0,0,0,0,1,0.0,0.99869,856,tres rare
+Argyrocytisus,battandieri,Genêt,1,1,0,1,0,0,0.0,0.99869,857,tres rare
+Betula,chinensis,Bouleau,1,0,0,0,0,1,0.0,0.99869,858,tres rare
+Betula,delavayi subsp. potaninii,Bouleau,1,0,0,0,0,1,0.0,0.99869,859,tres rare
+Betula,forrestii,Bouleau,1,0,0,0,0,1,0.0,0.99869,860,tres rare
+Staphylea,pinnata,Faux pistachier,1,0,0,0,0,1,0.0,0.99869,861,tres rare
+Styphnolobium,japonica,,1,1,0,0,0,1,0.0,0.99869,862,tres rare
+Styrax,hemsleyanus,Styrax,1,1,0,0,0,1,0.0,0.99869,863,tres rare
+Styrax,japonicus,Styrax,1,1,0,0,0,1,0.0,0.99869,864,tres rare
+Styrax,officinalis,Aliboufier,1,0,0,0,0,1,0.0,0.99869,865,tres rare
+Syringa,pekinensis,,1,0,0,0,0,1,0.0,0.99869,866,tres rare
+Aralia,spinosa,Angélique,1,1,0,0,0,1,0.0,0.99869,867,tres rare
+Sorbus,meliosmifolia,Sorbier,1,0,0,0,0,1,0.0,0.99869,868,tres rare
+Sorbus,padus,,1,1,0,0,0,1,0.0,0.99869,869,tres rare
+Parrotiopsis,jacquemontiana,Parrotiopsis,1,0,0,0,0,1,0.0,0.99869,870,tres rare
+Phellodendron,japonicum,,1,1,0,0,0,1,0.0,0.99869,871,tres rare
+Philadelphus,coronarius,Seringas,1,1,0,0,0,1,0.0,0.99869,872,tres rare
+Malus,baccata var. mandshurica,Pommier à fleurs,1,0,0,0,0,1,0.0,0.99869,873,tres rare
+Malus,n. sp.,,1,1,0,0,0,1,0.0,0.99869,874,tres rare
+Malus,prunifolia,Pommier,1,0,0,0,0,1,0.0,0.99869,875,tres rare
+Osmanthus,sp.,Olivier odorant,1,1,0,0,0,1,0.0,0.99869,876,tres rare
+Ilex,latifolia,,1,1,0,0,0,1,0.0,0.99869,877,tres rare
+Jubaea,chilensis,Palmier,1,1,0,0,0,1,0.0,0.99869,878,tres rare
+Juglans,ailantifolia,Noyer,1,0,0,0,0,1,0.0,0.99869,879,tres rare
+Juglans,mandshurica,Noyer,1,0,0,0,0,1,0.0,0.99869,880,tres rare
+Juglans,microcarpa,Noyer,1,0,0,0,0,1,0.0,0.99869,881,tres rare
+Juglans,x bixbyi,Noyer,1,0,0,0,0,1,0.0,0.99869,882,tres rare
+Pinus,heldreichii,Pin,1,1,0,0,0,1,0.0,0.99869,883,tres rare
+Pinus,jeffreyi,Pin,1,1,0,0,0,1,0.0,0.99869,884,tres rare
+Pinus,monophylla,Pin,1,0,0,0,0,1,0.0,0.99869,885,tres rare
+Pinus,mugo var. pumilio,Pin,1,0,0,0,0,1,0.0,0.99869,886,tres rare
+Picea,mariana,Epicéa,1,1,0,0,0,1,0.0,0.99869,887,tres rare
+Picea,obovata,Epicéa,1,0,0,0,0,1,0.0,0.99869,888,tres rare
+Taxodium,sp.,Cyprès Chauve,1,0,0,0,0,1,0.0,0.99869,889,tres rare
+Taxus,brevifolia,If,1,0,0,0,0,1,0.0,0.99869,890,tres rare
+Taxus,cuspidata,If,1,0,0,0,0,1,0.0,0.99869,891,tres rare
+Tetradium,daniellii (Hupehense Group),Arbre à miel,1,1,0,0,0,1,0.0,0.99869,892,tres rare
+Betula,luminifera,Bouleau,1,0,0,0,0,1,0.0,0.99869,893,tres rare
+Betula,n. sp.,,1,1,0,0,1,0,0.0,0.99869,894,tres rare
+Syringa,x chinensis,Lilas,1,1,0,1,0,0,0.0,0.99869,895,tres rare
+Ligustrum,vulgaris,,1,1,0,0,0,1,0.0,0.99869,896,tres rare
+Lindera,glauca,Lindera,1,0,0,0,0,1,0.0,0.99869,897,tres rare
+Lithocarpus,edulis,Lithocarpus,1,0,0,0,0,1,0.0,0.99869,898,tres rare
+Photinia,glabra,Photinia,1,1,0,0,0,1,0.0,0.99869,899,tres rare
+Picea,asperata var. retroflexa,Epicéa,1,0,0,0,0,1,0.0,0.99869,900,tres rare
+Larix,sp.,Mélèze,1,0,0,0,0,1,0.0,0.99869,901,tres rare
+Ligustrum,compactum var. compactum,Troëne,1,0,0,0,0,1,0.0,0.99869,902,tres rare
+Ligustrum,delavayanum,Troëne,1,0,0,0,0,1,0.0,0.99869,903,tres rare
+Sorbus,randaiensis,Sorbier,1,0,0,0,0,1,0.0,0.99869,904,tres rare
+Sorbus,vilmorinii,Sorbier,1,1,0,0,0,1,0.0,0.99869,905,tres rare
+Sorbus,x arnoldiana,Sorbier,1,1,0,0,0,1,0.0,0.99869,906,tres rare
+Stachyurus,chinensis,Stachyurus,1,1,0,0,0,1,0.0,0.99869,907,tres rare
+Carica,papaya,Papayer,1,1,0,0,0,1,0.0,0.99869,908,tres rare
+Carpinus,carpinifolia,,1,1,0,0,0,1,0.0,0.99869,909,tres rare
+Sorbus,cashmiriana,Sorbier,1,1,0,0,0,1,0.0,0.99869,910,tres rare
+Sorbus,forrestii,Sorbier,1,0,0,0,0,1,0.0,0.99869,911,tres rare
+Ulmus,americana,Orme,1,0,0,0,0,1,0.0,0.99869,912,tres rare
+Ulmus,n. sp.,,1,1,0,0,1,0,0.0,0.99869,913,tres rare
+x Sorbopyrus,auricularis,Poirier à fruits,1,0,0,0,0,1,0.0,0.99869,914,tres rare
+Wisteria,sinensis,Glycine,1,1,1,0,0,0,0.0,0.99869,915,tres rare
+Acer,sieboldianum,Erable,1,0,0,0,0,1,0.0,0.99869,916,tres rare
+Acer,x conspicuum,Erable,1,0,0,0,0,1,0.0,0.99869,917,tres rare
+Acer,macrophyllum,Erable,1,1,0,0,0,1,0.0,0.99869,918,tres rare
+Abies,lasiocarpa,Sapin,1,0,0,0,0,1,0.0,0.99869,919,tres rare
+Abelia,triflora,Abelia,1,1,0,0,0,1,0.0,0.99869,920,tres rare
+Mespilus,sp.,,1,1,0,0,0,1,0.0,0.99869,921,tres rare
+Metasequoia,sp.,,1,1,0,0,0,1,0.0,0.99869,922,tres rare
+Morus,cathayana,Mûrier,1,0,0,0,0,1,0.0,0.99869,923,tres rare
+Morus,rubra,Mûrier,1,1,0,0,1,0,0.0,0.99869,924,tres rare
+Wisteria,sp.,,1,1,0,0,0,1,0.0,0.99869,925,tres rare
+Abelia,sp.,,1,1,0,0,0,1,0.0,0.99869,926,tres rare
+Zanthoxylum,americanum,Poivrier,1,0,0,0,0,1,0.0,0.99869,927,tres rare
+Zanthoxylum,bungei,,1,1,0,0,0,1,0.0,0.99869,928,tres rare
+Zanthoxylum,caribaeum,Poivrier,1,0,0,0,0,1,0.0,0.99869,929,tres rare
+Zanthoxylum,n. sp.,,1,1,0,0,1,0,0.0,0.99869,930,tres rare
+Zanthoxylum,sp.,,1,1,0,0,0,1,0.0,0.99869,931,tres rare
+Ziziphus,sp.,,1,1,0,0,0,1,0.0,0.99869,932,tres rare

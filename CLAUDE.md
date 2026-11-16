@@ -16,11 +16,13 @@ Langue du projet : **français** (docs, contenu, messages de commit).
 ## État d'avancement
 - [x] Nom choisi : Botadex
 - [x] Squelette du repo
-- [ ] Import et analyse du jeu « Les arbres » (Paris Open Data) → comptage par espèce, niveaux de rareté
+- [x] Import et analyse du jeu « Les arbres » (Paris Open Data) → `scripts/import_arbres.py`, comptages dans `data/processed/` ; carte d'exploration `app/carte/` (`scripts/export_carte.py`)
 - [ ] Liste des espèces du package « Arbres communs »
 - [ ] Premières fiches espèces
 - [ ] Spécification des premières mécaniques (répétition espacée, paires de confusion)
 - [ ] POC web app
 
 ## Notes techniques
+- Chaîne de données : `python scripts/import_arbres.py` puis `python scripts/export_carte.py` (pandas requis).
+- Résultat clé : 16 genres = 80 % des arbres recensés (Platane, Marronnier, Tilleul, Érable, Sophora…).
 - opendata.paris.fr coupe les connexions depuis l'environnement cloud de Claude : le CSV « Les arbres » est téléchargé en local par l'utilisatrice et placé dans `data/raw/`.

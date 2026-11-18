@@ -1,0 +1,36 @@
+id: carpinus
+nom_scientifique: Carpinus
+noms_vernaculaires: ["Charme"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 3758
+  rang: 12
+  rarete: commune
+  milieux: {alignement: 1276, jardin: 1560, cimetiere: 558, equipement: 364}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: carpinus-betulus
+    nom_scientifique: "Carpinus betulus"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3706
+    part_du_genre: 0.99
+    niveau: 5
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

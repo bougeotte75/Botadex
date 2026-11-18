@@ -1,0 +1,60 @@
+id: acer
+nom_scientifique: Acer
+noms_vernaculaires: ["Érable"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 21153
+  rang: 4
+  rarete: commune
+  milieux: {alignement: 7580, jardin: 5492, cimetiere: 6321, equipement: 1760}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: acer-platanoides
+    nom_scientifique: "Acer platanoides"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 6647
+    part_du_genre: 0.31
+    niveau: 5
+  - id: acer-pseudoplatanus
+    nom_scientifique: "Acer pseudoplatanus"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 6606
+    part_du_genre: 0.31
+    niveau: 7
+  - id: acer-campestre
+    nom_scientifique: "Acer campestre"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3244
+    part_du_genre: 0.15
+    niveau: 7
+  - id: acer-negundo
+    nom_scientifique: "Acer negundo"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 917
+    part_du_genre: 0.04
+    niveau: 9
+  - id: acer-monspessulanum
+    nom_scientifique: "Acer monspessulanum"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 828
+    part_du_genre: 0.04
+    niveau: 9
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

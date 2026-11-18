@@ -7,7 +7,8 @@ Langue du projet : **français** (docs, contenu, messages de commit).
 
 ## Principes
 - **Fiabilité du contenu avant tout.** Chaque affirmation d'une fiche espèce est sourcée (Tela Botanica/eFlore, INPN, Flora Gallica, Sauvages de ma rue…). Les connaissances de Claude ne sont jamais une source. Une fiche n'est `verifie` qu'après recoupement des sources.
-- **Une espèce = une fiche**, dans `contenu/especes/<nom-scientifique-en-kebab>.yaml`. Les packages (`contenu/packages/<id>/package.yaml`) *référencent* les espèces, ils ne les contiennent pas.
+- **Le genre est l'unité d'apprentissage** (décision 0002) : une fiche par genre dans `contenu/genres/<genre>.yaml`, une fiche par espèce enseignée dans `contenu/especes/<nom-scientifique-en-kebab>.yaml`. Les packages (`contenu/packages/<id>/package.yaml`) *listent des genres* ; les espèces s'apprennent dans le genre via le niveau de recherche (`docs/mecaniques/niveau-de-recherche.md`).
+- Chaque affirmation d'une fiche genre porte un `niveau` de déblocage (1 à 10).
 - **Licences** : chaque photo et chaque source porte sa licence et un champ `usage_commercial` (oui/non). Pas de contenu « NC » dans un package payant.
 - **Mécaniques de jeu = expériences** : chaque fiche dans `docs/mecaniques/` suit le modèle hypothèse / règles / test / résultats.
 - **Données brutes** dans `data/raw/` (ignoré par git). Tout ce qui est dérivé est reproductible via `scripts/` et rangé dans `data/processed/`.
@@ -17,9 +18,10 @@ Langue du projet : **français** (docs, contenu, messages de commit).
 - [x] Nom choisi : Botadex
 - [x] Squelette du repo
 - [x] Import et analyse du jeu « Les arbres » (Paris Open Data) → `scripts/import_arbres.py`, comptages dans `data/processed/` ; carte d'exploration `app/carte/` (`scripts/export_carte.py`)
-- [ ] Liste des espèces du package « Arbres communs »
-- [ ] Premières fiches espèces
-- [ ] Spécification des premières mécaniques (répétition espacée, paires de confusion)
+- [x] Package « Arbres communs » : 16 genres ; squelettes des fiches genres générés (`scripts/generer_fiches_genres.py`)
+- [x] Mécanique « Niveau de recherche par genre » spécifiée
+- [ ] Rédiger et sourcer les fiches genres (critères, sosies, anecdotes, photos)
+- [ ] Spécifier les autres mécaniques (répétition espacée, quiz de sosies, capture terrain)
 - [ ] POC web app
 
 ## Notes techniques

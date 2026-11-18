@@ -1,0 +1,60 @@
+id: tilia
+nom_scientifique: Tilia
+noms_vernaculaires: ["Tilleul"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 23071
+  rang: 3
+  rarete: commune
+  milieux: {alignement: 12704, jardin: 5454, cimetiere: 3301, equipement: 1612}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: tilia-tomentosa
+    nom_scientifique: "Tilia tomentosa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7635
+    part_du_genre: 0.33
+    niveau: 5
+  - id: tilia-cordata
+    nom_scientifique: "Tilia cordata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4187
+    part_du_genre: 0.18
+    niveau: 7
+  - id: tilia-platyphyllos
+    nom_scientifique: "Tilia platyphyllos"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3073
+    part_du_genre: 0.13
+    niveau: 7
+  - id: tilia-x-euchlora
+    nom_scientifique: "Tilia x euchlora"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2686
+    part_du_genre: 0.12
+    niveau: 9
+  - id: tilia-x-europaea
+    nom_scientifique: "Tilia x europaea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2494
+    part_du_genre: 0.11
+    niveau: 9
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

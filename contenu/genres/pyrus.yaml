@@ -1,0 +1,42 @@
+id: pyrus
+nom_scientifique: Pyrus
+noms_vernaculaires: ["Poirier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 4801
+  rang: 11
+  rarete: commune
+  milieux: {alignement: 2443, jardin: 851, cimetiere: 468, equipement: 1039}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: pyrus-calleryana
+    nom_scientifique: "Pyrus calleryana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3685
+    part_du_genre: 0.77
+    niveau: 5
+  - id: pyrus-communis
+    nom_scientifique: "Pyrus communis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 805
+    part_du_genre: 0.17
+    niveau: 7
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

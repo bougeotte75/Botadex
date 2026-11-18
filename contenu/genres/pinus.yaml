@@ -1,0 +1,42 @@
+id: pinus
+nom_scientifique: Pinus
+noms_vernaculaires: ["Pin"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 5207
+  rang: 10
+  rarete: commune
+  milieux: {alignement: 445, jardin: 4153, cimetiere: 167, equipement: 442}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: pinus-nigra
+    nom_scientifique: "Pinus nigra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3786
+    part_du_genre: 0.73
+    niveau: 5
+  - id: pinus-sylvestris
+    nom_scientifique: "Pinus sylvestris"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 887
+    part_du_genre: 0.17
+    niveau: 7
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

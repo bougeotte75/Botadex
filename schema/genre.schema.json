@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fiche genre Botadex",
+  "type": "object",
+  "required": ["id", "nom_scientifique", "noms_vernaculaires", "statut", "especes", "sources"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Nom du genre en minuscules, identique au nom du fichier" },
+    "nom_scientifique": { "type": "string" },
+    "noms_vernaculaires": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "famille": { "type": ["string", "null"] },
+    "type": { "enum": ["arbre", "arbuste", "herbacee", "grimpante", "autre"] },
+    "statut": { "enum": ["brouillon", "a-verifier", "verifie"] },
+    "paris": {
+      "type": "object",
+      "description": "Chiffres issus de data/processed/genres_arbres.csv (source : paris-opendata)",
+      "properties": {
+        "n_arbres": { "type": "integer" },
+        "rang": { "type": "integer" },
+        "rarete": { "enum": ["commune", "peu commune", "rare", "tres rare"] },
+        "milieux": { "type": "object", "additionalProperties": { "type": "integer" } }
+      }
+    },
+    "especes": {
+      "type": "array",
+      "description": "Espèces enseignées, dans l'ordre d'apprentissage (fréquence à Paris)",
+      "items": {
+        "type": "object",
+        "required": ["id", "nom_scientifique"],
+        "properties": {
+          "id": { "type": "string", "description": "id de la fiche espèce (contenu/especes/)" },
+          "nom_scientifique": { "type": "string" },
+          "nom_vernaculaire": { "type": ["string", "null"] },
+          "n_paris": { "type": "integer" },
+          "part_du_genre": { "type": "number" },
+          "niveau": { "type": "integer", "minimum": 5, "maximum": 10, "description": "Niveau de recherche auquel l'espèce est enseignée" }
+        }
+      }
+    },
+    "reconnaissance": {
+      "type": "object",
+      "description": "Critères par organe ou saison (principal, feuille, ecorce, silhouette, hiver, fleur, fruit…)",
+      "additionalProperties": { "type": "array", "items": { "$ref": "#/$defs/affirmation" } }
+    },
+    "sosies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["genre", "comment_distinguer"],
+        "properties": {
+          "genre": { "type": "string", "description": "id du genre (ou de l'espèce) confondu" },
+          "comment_distinguer": { "$ref": "#/$defs/affirmation" }
+        }
+      }
+    },
+    "anecdotes": { "type": "array", "items": { "$ref": "#/$defs/affirmation" } },
+    "photos": { "type": "array", "items": { "$ref": "espece.schema.json#/properties/photos/items" } },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "espece.schema.json#/$defs/source" } }
+  },
+  "$defs": {
+    "affirmation": {
+      "type": "object",
+      "required": ["texte", "sources", "niveau"],
+      "properties": {
+        "texte": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "niveau": { "type": "integer", "minimum": 1, "maximum": 10, "description": "Niveau de recherche à partir duquel l'affirmation s'affiche" }
+      }
+    }
+  }
+}

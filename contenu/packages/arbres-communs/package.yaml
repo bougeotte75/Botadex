@@ -1,10 +1,29 @@
 id: arbres-communs
 titre: Arbres communs de Paris
 description: >
-  Les arbres que l'on croise le plus souvent dans les rues et jardins parisiens.
+  Les 16 genres d'arbres qui représentent à eux seuls 80 % des arbres gérés par la Ville de Paris.
+  On apprend d'abord à reconnaître chaque genre, puis ses espèces au fil du niveau de recherche.
 niveau: debutant
 acces: gratuit
+prix_eur: null
 prerequis: []
-# Liste ordonnée d'identifiants d'espèces (noms de fichiers de contenu/especes/ sans extension).
-# À remplir d'après l'analyse du jeu « Les arbres » (data/processed/).
-especes: []
+rang_requis: null
+# Ordre d'apprentissage provisoire = fréquence à Paris (source : data/processed/genres_arbres.csv).
+# À revoir : alterner rue / jardin, et rapprocher les sosies une fois maîtrisés.
+genres:
+  - platanus        # Platane          42 573
+  - aesculus        # Marronnier       24 790
+  - tilia           # Tilleul          23 071
+  - acer            # Érable           21 153
+  - styphnolobium   # Sophora          11 307
+  - prunus          # Cerisier, prunier 9 243
+  - quercus         # Chêne             6 410
+  - fraxinus        # Frêne             6 320
+  - celtis          # Micocoulier       5 210
+  - pinus           # Pin               5 207
+  - pyrus           # Poirier           4 801
+  - carpinus        # Charme            3 758
+  - corylus         # Noisetier         3 574
+  - malus           # Pommier           2 992
+  - populus         # Peuplier          2 940
+  - taxus           # If                2 809

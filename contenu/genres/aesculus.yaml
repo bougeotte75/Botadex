@@ -1,0 +1,42 @@
+id: aesculus
+nom_scientifique: Aesculus
+noms_vernaculaires: ["Marronnier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 24790
+  rang: 2
+  rarete: commune
+  milieux: {alignement: 16237, jardin: 2965, cimetiere: 3950, equipement: 1638}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: aesculus-hippocastanum
+    nom_scientifique: "Aesculus hippocastanum"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 19904
+    part_du_genre: 0.80
+    niveau: 5
+  - id: aesculus-x-carnea
+    nom_scientifique: "Aesculus x carnea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4137
+    part_du_genre: 0.17
+    niveau: 7
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

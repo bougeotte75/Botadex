@@ -1,0 +1,66 @@
+id: quercus
+nom_scientifique: Quercus
+noms_vernaculaires: ["Chêne"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 6410
+  rang: 7
+  rarete: commune
+  milieux: {alignement: 2243, jardin: 3582, cimetiere: 399, equipement: 186}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: quercus-robur
+    nom_scientifique: "Quercus robur"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1528
+    part_du_genre: 0.24
+    niveau: 5
+  - id: quercus-ilex
+    nom_scientifique: "Quercus ilex"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1179
+    part_du_genre: 0.18
+    niveau: 7
+  - id: quercus-cerris
+    nom_scientifique: "Quercus cerris"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 717
+    part_du_genre: 0.11
+    niveau: 7
+  - id: quercus-rubra
+    nom_scientifique: "Quercus rubra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 642
+    part_du_genre: 0.10
+    niveau: 9
+  - id: quercus-petraea
+    nom_scientifique: "Quercus petraea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 473
+    part_du_genre: 0.07
+    niveau: 9
+  - id: quercus-pubescens
+    nom_scientifique: "Quercus pubescens"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 359
+    part_du_genre: 0.06
+    niveau: 9
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

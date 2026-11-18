@@ -1,0 +1,54 @@
+id: populus
+nom_scientifique: Populus
+noms_vernaculaires: ["Peuplier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 2940
+  rang: 15
+  rarete: commune
+  milieux: {alignement: 1590, jardin: 572, cimetiere: 551, equipement: 227}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: populus-nigra
+    nom_scientifique: "Populus nigra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1117
+    part_du_genre: 0.38
+    niveau: 5
+  - id: populus-x-canadensis
+    nom_scientifique: "Populus x canadensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 751
+    part_du_genre: 0.26
+    niveau: 7
+  - id: populus-alba
+    nom_scientifique: "Populus alba"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 547
+    part_du_genre: 0.19
+    niveau: 7
+  - id: populus-x-canescens
+    nom_scientifique: "Populus x canescens"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 103
+    part_du_genre: 0.04
+    niveau: 9
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

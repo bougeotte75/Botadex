@@ -1,0 +1,54 @@
+id: fraxinus
+nom_scientifique: Fraxinus
+noms_vernaculaires: ["Frêne"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 6320
+  rang: 8
+  rarete: commune
+  milieux: {alignement: 2722, jardin: 1422, cimetiere: 1998, equipement: 178}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: fraxinus-excelsior
+    nom_scientifique: "Fraxinus excelsior"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3273
+    part_du_genre: 0.52
+    niveau: 5
+  - id: fraxinus-ornus
+    nom_scientifique: "Fraxinus ornus"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1258
+    part_du_genre: 0.20
+    niveau: 7
+  - id: fraxinus-angustifolia
+    nom_scientifique: "Fraxinus angustifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 949
+    part_du_genre: 0.15
+    niveau: 7
+  - id: fraxinus-americana
+    nom_scientifique: "Fraxinus americana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 316
+    part_du_genre: 0.05
+    niveau: 9
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

@@ -1,0 +1,60 @@
+id: prunus
+nom_scientifique: Prunus
+noms_vernaculaires: ["Cerisier, prunier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 9243
+  rang: 6
+  rarete: commune
+  milieux: {alignement: 2405, jardin: 4266, cimetiere: 1001, equipement: 1571}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: prunus-avium
+    nom_scientifique: "Prunus avium"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1745
+    part_du_genre: 0.19
+    niveau: 5
+  - id: prunus-serrulata
+    nom_scientifique: "Prunus serrulata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1269
+    part_du_genre: 0.14
+    niveau: 7
+  - id: prunus-cerasifera
+    nom_scientifique: "Prunus cerasifera"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 883
+    part_du_genre: 0.10
+    niveau: 7
+  - id: prunus-padus
+    nom_scientifique: "Prunus padus"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 766
+    part_du_genre: 0.08
+    niveau: 9
+  - id: prunus-x-subhirtella
+    nom_scientifique: "Prunus x subhirtella"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 524
+    part_du_genre: 0.06
+    niveau: 9
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

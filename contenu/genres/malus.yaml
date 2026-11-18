@@ -1,0 +1,60 @@
+id: malus
+nom_scientifique: Malus
+noms_vernaculaires: ["Pommier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 2992
+  rang: 14
+  rarete: commune
+  milieux: {alignement: 675, jardin: 1219, cimetiere: 58, equipement: 1040}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: malus-domestica
+    nom_scientifique: "Malus domestica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1186
+    part_du_genre: 0.40
+    niveau: 5
+  - id: malus-tschonoskii
+    nom_scientifique: "Malus tschonoskii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 325
+    part_du_genre: 0.11
+    niveau: 7
+  - id: malus-trilobata
+    nom_scientifique: "Malus trilobata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 245
+    part_du_genre: 0.08
+    niveau: 7
+  - id: malus-floribunda
+    nom_scientifique: "Malus floribunda"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 130
+    part_du_genre: 0.04
+    niveau: 9
+  - id: malus-sylvestris
+    nom_scientifique: "Malus sylvestris"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 123
+    part_du_genre: 0.04
+    niveau: 9
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

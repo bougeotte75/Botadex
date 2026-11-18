@@ -1,0 +1,42 @@
+id: corylus
+nom_scientifique: Corylus
+noms_vernaculaires: ["Noisetier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 3574
+  rang: 13
+  rarete: commune
+  milieux: {alignement: 2455, jardin: 397, cimetiere: 661, equipement: 61}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: corylus-colurna
+    nom_scientifique: "Corylus colurna"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3391
+    part_du_genre: 0.95
+    niveau: 5
+  - id: corylus-avellana
+    nom_scientifique: "Corylus avellana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 153
+    part_du_genre: 0.04
+    niveau: 7
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

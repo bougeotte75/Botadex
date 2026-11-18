@@ -1,0 +1,36 @@
+id: taxus
+nom_scientifique: Taxus
+noms_vernaculaires: ["If"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)
+  n_arbres: 2809
+  rang: 16
+  rarete: commune
+  milieux: {alignement: 9, jardin: 2138, cimetiere: 500, equipement: 162}
+especes:                   # ordre d'apprentissage = fréquence à Paris
+  - id: taxus-baccata
+    nom_scientifique: "Taxus baccata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2779
+    part_du_genre: 0.99
+    niveau: 5
+reconnaissance:            # chaque critère : texte, sources, niveau
+  principal: []            # niveau 1
+  feuille: []
+  ecorce: []
+  silhouette: []
+  hiver: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 3
+anecdotes: []
+photos: []
+sources:
+  - id: paris-opendata
+    titre: Ville de Paris — jeu de données « Les arbres »
+    url: https://opendata.paris.fr/explore/dataset/les-arbres/
+    licence: ODbL
+    usage_commercial: true
+    consulte_le: 2026-11-16

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Package Botadex",
   "type": "object",
-  "required": ["id", "titre", "niveau", "acces", "especes"],
+  "required": ["id", "titre", "niveau", "acces", "genres"],
   "properties": {
     "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "titre": { "type": "string" },
@@ -11,6 +11,7 @@
     "acces": { "enum": ["gratuit", "payant"] },
     "prix_eur": { "type": ["number", "null"] },
     "prerequis": { "type": "array", "items": { "type": "string" }, "description": "ids d'autres packages" },
-    "especes": { "type": "array", "items": { "type": "string" }, "description": "ids d'espèces, dans l'ordre d'apprentissage" }
+    "rang_requis": { "type": ["integer", "null"], "description": "Rang de botaniste nécessaire pour débloquer le package" },
+    "genres": { "type": "array", "items": { "type": "string" }, "description": "ids de fiches genres (contenu/genres/), dans l'ordre d'apprentissage" }
   }
 }

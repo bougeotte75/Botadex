@@ -6,6 +6,7 @@ Toujours vérifier la licence et l'usage commercial avant d'intégrer une source
 | Source | Contenu | Licence | Usage commercial | Usage prévu | Statut |
 |---|---|---|---|---|---|
 | Paris Open Data — « Les arbres » | Arbres gérés par la Ville (alignement, espaces verts, équipements) : espèce, adresse, dimensions, stade, coordonnées | ODbL (à confirmer) | à vérifier (ODbL : oui, avec attribution et partage à l'identique des bases dérivées) | Choix des espèces (fréquence), niveaux de rareté, carte, aide à l'identification par localisation | utilisee |
+| Paris Open Data — « Fiches essences du Guide des essences de Paris » (2024) | Une fiche PDF par essence plantée à Paris : présence à Paris, description, atouts, contraintes, biodiversité, allergies, phénologie | à vérifier | à vérifier | Source de référence parisienne pour les dossiers de recherche | utilisee |
 | Paris Open Data — « Arbres remarquables » | Arbres remarquables géolocalisés | à vérifier | à vérifier | Quêtes, anecdotes | plus-tard |
 | Paris Open Data — plantations récentes | Arbres plantés depuis nov. 2021 | à vérifier | à vérifier | Tendances (arbres communs de demain) | plus-tard |
 | Sauvages de ma rue (MNHN / Tela Botanica) | Flore spontanée des rues | à vérifier | à vérifier | Package « plantes des trottoirs » | plus-tard |

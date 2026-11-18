@@ -1,0 +1,89 @@
+id: celtis
+nom_scientifique: Celtis
+noms_vernaculaires: ["Micocoulier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: CEL
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 5210
+  rang: 9
+  rarete: commune
+  milieux: {alignement: 3618, jardin: 492, cimetiere: 693, equipement: 407}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: celtis-australis
+    nom_scientifique: "Celtis australis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4947
+    part_du_genre: 0.95
+  - id: celtis-occidentalis
+    nom_scientifique: "Celtis occidentalis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 140
+    part_du_genre: 0.03
+  - id: celtis-sinensis
+    nom_scientifique: "Celtis sinensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 27
+    part_du_genre: 0.01
+  - id: celtis-julianae
+    nom_scientifique: "Celtis julianae"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7
+    part_du_genre: 0.00
+  - id: celtis-jessoensis
+    nom_scientifique: "Celtis jessoensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 5
+    part_du_genre: 0.00
+  - id: celtis-koraiensis
+    nom_scientifique: "Celtis koraiensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: celtis-labilis
+    nom_scientifique: "Celtis labilis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: celtis-laevigata
+    nom_scientifique: "Celtis laevigata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: celtis-tenuifolia
+    nom_scientifique: "Celtis tenuifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: celtis-biondii
+    nom_scientifique: "Celtis biondii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: celtis-bungeana
+    nom_scientifique: "Celtis bungeana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: celtis-occidentalis-var-cordata
+    nom_scientifique: "Celtis occidentalis var cordata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [CEL-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (CEL-P001…)

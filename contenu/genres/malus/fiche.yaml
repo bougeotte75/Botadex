@@ -1,0 +1,139 @@
+id: malus
+nom_scientifique: Malus
+noms_vernaculaires: ["Pommier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: MAL
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 2992
+  rang: 14
+  rarete: commune
+  milieux: {alignement: 675, jardin: 1219, cimetiere: 58, equipement: 1040}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: malus-domestica
+    nom_scientifique: "Malus domestica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1186
+    part_du_genre: 0.40
+  - id: malus-tschonoskii
+    nom_scientifique: "Malus tschonoskii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 325
+    part_du_genre: 0.11
+  - id: malus-trilobata
+    nom_scientifique: "Malus trilobata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 245
+    part_du_genre: 0.08
+  - id: malus-floribunda
+    nom_scientifique: "Malus floribunda"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 130
+    part_du_genre: 0.04
+  - id: malus-sylvestris
+    nom_scientifique: "Malus sylvestris"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 123
+    part_du_genre: 0.04
+  - id: malus-pumila
+    nom_scientifique: "Malus pumila"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 79
+    part_du_genre: 0.03
+  - id: malus-toringoides
+    nom_scientifique: "Malus toringoides"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 63
+    part_du_genre: 0.02
+  - id: malus-toringo
+    nom_scientifique: "Malus toringo"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 44
+    part_du_genre: 0.01
+  - id: malus-x-zumi
+    nom_scientifique: "Malus x zumi"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 16
+    part_du_genre: 0.01
+  - id: malus-fruit-n-sp
+    nom_scientifique: "Malus Fruit n. sp."
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 16
+    part_du_genre: 0.01
+  - id: malus-baccata
+    nom_scientifique: "Malus baccata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 13
+    part_du_genre: 0.00
+  - id: malus-x-robusta
+    nom_scientifique: "Malus x robusta"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 11
+    part_du_genre: 0.00
+  - id: malus-fleur-n-sp
+    nom_scientifique: "Malus Fleur n. sp."
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7
+    part_du_genre: 0.00
+  - id: malus-x-purpurea
+    nom_scientifique: "Malus x purpurea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 6
+    part_du_genre: 0.00
+  - id: malus-spectabilis
+    nom_scientifique: "Malus spectabilis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: malus-transitoria
+    nom_scientifique: "Malus transitoria"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: malus-sieversii
+    nom_scientifique: "Malus sieversii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: malus-ioensis
+    nom_scientifique: "Malus ioensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: malus-communis
+    nom_scientifique: "Malus communis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: malus-hupehensis
+    nom_scientifique: "Malus hupehensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: malus-x-atrosanguinea
+    nom_scientifique: "Malus x atrosanguinea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: malus-prunifolia
+    nom_scientifique: "Malus prunifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [MAL-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (MAL-P001…)

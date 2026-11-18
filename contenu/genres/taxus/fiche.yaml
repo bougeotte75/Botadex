@@ -1,0 +1,49 @@
+id: taxus
+nom_scientifique: Taxus
+noms_vernaculaires: ["If"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: TAX
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 2809
+  rang: 16
+  rarete: commune
+  milieux: {alignement: 9, jardin: 2138, cimetiere: 500, equipement: 162}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: taxus-baccata
+    nom_scientifique: "Taxus baccata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2779
+    part_du_genre: 0.99
+  - id: taxus-x-media
+    nom_scientifique: "Taxus x media"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: taxus-brevifolia
+    nom_scientifique: "Taxus brevifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: taxus-cuspidata
+    nom_scientifique: "Taxus cuspidata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [TAX-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (TAX-P001…)

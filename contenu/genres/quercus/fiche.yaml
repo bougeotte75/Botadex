@@ -1,0 +1,289 @@
+id: quercus
+nom_scientifique: Quercus
+noms_vernaculaires: ["Chêne"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: QUE
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 6410
+  rang: 7
+  rarete: commune
+  milieux: {alignement: 2243, jardin: 3582, cimetiere: 399, equipement: 186}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: quercus-robur
+    nom_scientifique: "Quercus robur"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1528
+    part_du_genre: 0.24
+  - id: quercus-ilex
+    nom_scientifique: "Quercus ilex"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1179
+    part_du_genre: 0.18
+  - id: quercus-cerris
+    nom_scientifique: "Quercus cerris"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 717
+    part_du_genre: 0.11
+  - id: quercus-rubra
+    nom_scientifique: "Quercus rubra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 642
+    part_du_genre: 0.10
+  - id: quercus-petraea
+    nom_scientifique: "Quercus petraea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 473
+    part_du_genre: 0.07
+  - id: quercus-pubescens
+    nom_scientifique: "Quercus pubescens"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 359
+    part_du_genre: 0.06
+  - id: quercus-frainetto
+    nom_scientifique: "Quercus frainetto"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 117
+    part_du_genre: 0.02
+  - id: quercus-imbricaria
+    nom_scientifique: "Quercus imbricaria"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 84
+    part_du_genre: 0.01
+  - id: quercus-palustris
+    nom_scientifique: "Quercus palustris"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 82
+    part_du_genre: 0.01
+  - id: quercus-coccinea
+    nom_scientifique: "Quercus coccinea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 68
+    part_du_genre: 0.01
+  - id: quercus-suber
+    nom_scientifique: "Quercus suber"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 58
+    part_du_genre: 0.01
+  - id: quercus-x-hispanica
+    nom_scientifique: "Quercus x hispanica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 45
+    part_du_genre: 0.01
+  - id: quercus-castaneifolia
+    nom_scientifique: "Quercus castaneifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 38
+    part_du_genre: 0.01
+  - id: quercus-phellos
+    nom_scientifique: "Quercus phellos"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 38
+    part_du_genre: 0.01
+  - id: quercus-phillyreoides
+    nom_scientifique: "Quercus phillyreoides"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 30
+    part_du_genre: 0.00
+  - id: quercus-acutissima
+    nom_scientifique: "Quercus acutissima"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 29
+    part_du_genre: 0.00
+  - id: quercus-coccifera
+    nom_scientifique: "Quercus coccifera"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 27
+    part_du_genre: 0.00
+  - id: quercus-bicolor
+    nom_scientifique: "Quercus bicolor"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 27
+    part_du_genre: 0.00
+  - id: quercus-x-turneri
+    nom_scientifique: "Quercus x turneri"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 19
+    part_du_genre: 0.00
+  - id: quercus-shumardii
+    nom_scientifique: "Quercus shumardii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 13
+    part_du_genre: 0.00
+  - id: quercus-robur-fastigiata-group
+    nom_scientifique: "Quercus robur (Fastigiata Group)"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 13
+    part_du_genre: 0.00
+  - id: quercus-macranthera
+    nom_scientifique: "Quercus macranthera"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 10
+    part_du_genre: 0.00
+  - id: quercus-dentata
+    nom_scientifique: "Quercus dentata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7
+    part_du_genre: 0.00
+  - id: quercus-glauca
+    nom_scientifique: "Quercus glauca"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7
+    part_du_genre: 0.00
+  - id: quercus-pyrenaica
+    nom_scientifique: "Quercus pyrenaica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7
+    part_du_genre: 0.00
+  - id: quercus-myrsinifolia
+    nom_scientifique: "Quercus myrsinifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7
+    part_du_genre: 0.00
+  - id: quercus-variabilis
+    nom_scientifique: "Quercus variabilis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 6
+    part_du_genre: 0.00
+  - id: quercus-macrocarpa
+    nom_scientifique: "Quercus macrocarpa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 6
+    part_du_genre: 0.00
+  - id: quercus-ilicifolia
+    nom_scientifique: "Quercus ilicifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 5
+    part_du_genre: 0.00
+  - id: quercus-alba
+    nom_scientifique: "Quercus alba"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 5
+    part_du_genre: 0.00
+  - id: quercus-x-kewensis
+    nom_scientifique: "Quercus x kewensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 5
+    part_du_genre: 0.00
+  - id: quercus-x-heterophylla
+    nom_scientifique: "Quercus x heterophylla"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: quercus-faginea
+    nom_scientifique: "Quercus faginea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: quercus-nigra
+    nom_scientifique: "Quercus nigra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: quercus-serrata
+    nom_scientifique: "Quercus serrata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: quercus-augustinii
+    nom_scientifique: "Quercus augustinii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: quercus-rysophylla
+    nom_scientifique: "Quercus rysophylla"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: quercus-marilandica
+    nom_scientifique: "Quercus marilandica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: quercus-mongolica
+    nom_scientifique: "Quercus mongolica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: quercus-ithaburensis
+    nom_scientifique: "Quercus ithaburensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: quercus-canbyi
+    nom_scientifique: "Quercus canbyi"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-alnifolia
+    nom_scientifique: "Quercus alnifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-berberidifolia
+    nom_scientifique: "Quercus berberidifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-canariensis
+    nom_scientifique: "Quercus canariensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-crassifolia
+    nom_scientifique: "Quercus crassifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-falcata
+    nom_scientifique: "Quercus falcata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-lanata
+    nom_scientifique: "Quercus lanata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-muehlenbergii
+    nom_scientifique: "Quercus muehlenbergii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-pontica
+    nom_scientifique: "Quercus pontica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-rotundifolia
+    nom_scientifique: "Quercus rotundifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-trojana
+    nom_scientifique: "Quercus trojana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: quercus-x-libanerris
+    nom_scientifique: "Quercus x libanerris"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [QUE-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (QUE-P001…)

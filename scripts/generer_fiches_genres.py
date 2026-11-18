@@ -1,8 +1,8 @@
-"""Génère le squelette des fiches genres d'un package à partir des données Paris Open Data.
+"""Génère le dossier de chaque genre d'un package : fiche jeu (fiche.yaml), dossier de recherche (recherche.md), photos (photos.md).
 
-Remplit uniquement ce que les données établissent (chiffres parisiens, espèces et leur ordre d'apprentissage).
+La fiche jeu ne contient que ce que les données établissent (chiffres parisiens, espèces et leur ordre d'apprentissage).
 Les critères de reconnaissance, sosies et anecdotes restent à rédiger à partir de sources botaniques.
-Ne réécrit jamais une fiche existante.
+Ne réécrit jamais un fichier existant.
 
 Usage : python scripts/generer_fiches_genres.py [rarete]   (par défaut : commune)
 """
@@ -15,6 +15,7 @@ import pandas as pd
 RACINE = Path(__file__).resolve().parents[1]
 PROC = RACINE / "data" / "processed"
 GENRES = RACINE / "contenu" / "genres"
+MODELE = GENRES / "_modele"
 
 PART_MIN = 0          # toutes les espèces du genre présentes à Paris (décision : pas de filtre par rareté)
 ESPECES_IGNOREES = {"sp.", "n. sp.", "?"}
@@ -34,6 +35,10 @@ def yaml_str(s) -> str:
     return '"' + str(s).replace('"', '\\"') + '"'
 
 
+def prefixe(genre: str) -> str:
+    return genre[:3].upper()
+
+
 def fiche(g: pd.Series, especes: pd.DataFrame) -> str:
     nom = CORRECTIONS_NOMS.get(g.nom_fr, g.nom_fr)
     milieux = {m: int(g[f"n_{m}"]) for m in ["alignement", "jardin", "cimetiere", "equipement"] if f"n_{m}" in g}
@@ -44,7 +49,8 @@ def fiche(g: pd.Series, especes: pd.DataFrame) -> str:
         "famille: null              # à sourcer",
         "type: arbre",
         "statut: brouillon",
-        "paris:                     # source : paris-opendata (data/processed/genres_arbres.csv)",
+        f"prefixe_notes: {prefixe(g.genre)}",
+        "paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv",
         f"  n_arbres: {int(g.n_total)}",
         f"  rang: {int(g.rang)}",
         f"  rarete: {g.rarete}",
@@ -63,24 +69,20 @@ def fiche(g: pd.Series, especes: pd.DataFrame) -> str:
             f"    part_du_genre: {e.part_genre:.2f}",
         ]
     lignes += [
-        "reconnaissance:            # chaque critère : texte, sources, niveau",
+        "# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :",
+        f"#   - texte: \"...\"\n#     notes: [{prefixe(g.genre)}-001]\n#     niveau: 1",
+        "reconnaissance:",
         "  principal: []            # niveau 1",
+        "  silhouette: []",
         "  feuille: []",
         "  ecorce: []",
-        "  silhouette: []",
-        "  hiver: []",
+        "  bourgeon: []",
         "  fleur: []",
         "  fruit: []",
-        "sosies: []                 # niveau 3",
+        "sosies: []                 # niveau 2",
+        "phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}",
         "anecdotes: []",
-        "photos: []",
-        "sources:",
-        "  - id: paris-opendata",
-        "    titre: Ville de Paris — jeu de données « Les arbres »",
-        "    url: https://opendata.paris.fr/explore/dataset/les-arbres/",
-        "    licence: ODbL",
-        "    usage_commercial: true",
-        "    consulte_le: 2026-11-16",
+        f"photos: []                 # ids de photos.md ({prefixe(g.genre)}-P001…)",
     ]
     return "\n".join(lignes) + "\n"
 
@@ -100,13 +102,22 @@ def main() -> None:
         t = taxons[(taxons["genre"] == g.genre) & ~taxons["espece"].isin(ESPECES_IGNOREES)].copy()
         t["part_genre"] = t["n_total"] / g.n_total
         t = t[t["part_genre"] >= PART_MIN].sort_values("n_total", ascending=False)
-        chemin = GENRES / f"{kebab(g.genre)}.yaml"
+        dossier = GENRES / kebab(g.genre)
+        dossier.mkdir(exist_ok=True)
         ids.append(kebab(g.genre))
-        if chemin.exists():
-            print(f"existe déjà : {chemin.name}")
-            continue
-        chemin.write_text(fiche(g, t), encoding="utf-8")
-        print(f"créée : {chemin.name} ({len(t)} espèces)")
+        nom = CORRECTIONS_NOMS.get(g.nom_fr, g.nom_fr)
+        fichiers = {"fiche.yaml": fiche(g, t)}
+        for modele in ["recherche.md", "photos.md"]:
+            fichiers[modele] = (MODELE / modele).read_text(encoding="utf-8").replace(
+                "{NOM}", nom).replace("{GENRE}", g.genre).replace("{PREFIXE}", prefixe(g.genre))
+        for nom_fichier, texte in fichiers.items():
+            chemin = dossier / nom_fichier
+            if chemin.exists():
+                continue
+            chemin.write_text(texte, encoding="utf-8")
+        print(f"{dossier.name}/ ({len(t)} espèces, préfixe {prefixe(g.genre)})")
+    prefixes = [i[:3].upper() for i in ids]
+    assert len(set(prefixes)) == len(prefixes), f"préfixes en double : {prefixes}"
     print("genres :", ", ".join(ids))
 
 

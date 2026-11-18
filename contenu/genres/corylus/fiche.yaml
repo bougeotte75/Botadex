@@ -1,0 +1,64 @@
+id: corylus
+nom_scientifique: Corylus
+noms_vernaculaires: ["Noisetier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: COR
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 3574
+  rang: 13
+  rarete: commune
+  milieux: {alignement: 2455, jardin: 397, cimetiere: 661, equipement: 61}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: corylus-colurna
+    nom_scientifique: "Corylus colurna"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3391
+    part_du_genre: 0.95
+  - id: corylus-avellana
+    nom_scientifique: "Corylus avellana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 153
+    part_du_genre: 0.04
+  - id: corylus-maxima
+    nom_scientifique: "Corylus maxima"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 8
+    part_du_genre: 0.00
+  - id: corylus-chinensis
+    nom_scientifique: "Corylus chinensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: corylus-americana
+    nom_scientifique: "Corylus americana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: corylus-fargesii
+    nom_scientifique: "Corylus fargesii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: corylus-x-colurnoides
+    nom_scientifique: "Corylus x colurnoides"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [COR-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (COR-P001…)

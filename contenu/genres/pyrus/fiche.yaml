@@ -1,0 +1,69 @@
+id: pyrus
+nom_scientifique: Pyrus
+noms_vernaculaires: ["Poirier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: PYR
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 4801
+  rang: 11
+  rarete: commune
+  milieux: {alignement: 2443, jardin: 851, cimetiere: 468, equipement: 1039}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: pyrus-calleryana
+    nom_scientifique: "Pyrus calleryana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3685
+    part_du_genre: 0.77
+  - id: pyrus-communis
+    nom_scientifique: "Pyrus communis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 805
+    part_du_genre: 0.17
+  - id: pyrus-salicifolia
+    nom_scientifique: "Pyrus salicifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 126
+    part_du_genre: 0.03
+  - id: pyrus-nivalis
+    nom_scientifique: "Pyrus nivalis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 20
+    part_du_genre: 0.00
+  - id: pyrus-fruit-n-sp
+    nom_scientifique: "Pyrus Fruit n. sp."
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 17
+    part_du_genre: 0.00
+  - id: pyrus-pyrifolia
+    nom_scientifique: "Pyrus pyrifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 15
+    part_du_genre: 0.00
+  - id: pyrus-fleur-n-sp
+    nom_scientifique: "Pyrus Fleur n. sp."
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: pyrus-ussuriensis
+    nom_scientifique: "Pyrus ussuriensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [PYR-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (PYR-P001…)

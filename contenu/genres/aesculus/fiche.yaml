@@ -1,0 +1,89 @@
+id: aesculus
+nom_scientifique: Aesculus
+noms_vernaculaires: ["Marronnier"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: AES
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 24790
+  rang: 2
+  rarete: commune
+  milieux: {alignement: 16237, jardin: 2965, cimetiere: 3950, equipement: 1638}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: aesculus-hippocastanum
+    nom_scientifique: "Aesculus hippocastanum"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 19904
+    part_du_genre: 0.80
+  - id: aesculus-x-carnea
+    nom_scientifique: "Aesculus x carnea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4137
+    part_du_genre: 0.17
+  - id: aesculus-pavia
+    nom_scientifique: "Aesculus pavia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 51
+    part_du_genre: 0.00
+  - id: aesculus-flava
+    nom_scientifique: "Aesculus flava"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 24
+    part_du_genre: 0.00
+  - id: aesculus-parviflora
+    nom_scientifique: "Aesculus parviflora"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 7
+    part_du_genre: 0.00
+  - id: aesculus-x-mutabilis
+    nom_scientifique: "Aesculus x mutabilis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: aesculus-chinensis
+    nom_scientifique: "Aesculus chinensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: aesculus-californica
+    nom_scientifique: "Aesculus californica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: aesculus-x-neglecta
+    nom_scientifique: "Aesculus x neglecta"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: aesculus-turbinata
+    nom_scientifique: "Aesculus turbinata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: aesculus-sylvatica
+    nom_scientifique: "Aesculus sylvatica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: aesculus-glabra
+    nom_scientifique: "Aesculus glabra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [AES-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (AES-P001…)

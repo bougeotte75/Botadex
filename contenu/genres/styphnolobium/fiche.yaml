@@ -1,0 +1,39 @@
+id: styphnolobium
+nom_scientifique: Styphnolobium
+noms_vernaculaires: ["Sophora"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: STY
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 11307
+  rang: 5
+  rarete: commune
+  milieux: {alignement: 8621, jardin: 1559, cimetiere: 971, equipement: 156}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: styphnolobium-japonicum
+    nom_scientifique: "Styphnolobium japonicum"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 10846
+    part_du_genre: 0.96
+  - id: styphnolobium-japonica
+    nom_scientifique: "Styphnolobium japonica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [STY-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (STY-P001…)

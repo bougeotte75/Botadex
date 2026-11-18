@@ -1,77 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Fiche genre Botadex",
+  "title": "Fiche jeu d'un genre Botadex (contenu/genres/<genre>/fiche.yaml)",
   "type": "object",
-  "required": [
-    "id",
-    "nom_scientifique",
-    "noms_vernaculaires",
-    "statut",
-    "especes",
-    "sources"
-  ],
+  "required": ["id", "nom_scientifique", "noms_vernaculaires", "statut", "prefixe_notes", "especes"],
   "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z0-9-]+$",
-      "description": "Nom du genre en minuscules, identique au nom du fichier"
-    },
-    "nom_scientifique": {
-      "type": "string"
-    },
-    "noms_vernaculaires": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "minItems": 1
-    },
-    "famille": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "type": {
-      "enum": [
-        "arbre",
-        "arbuste",
-        "herbacee",
-        "grimpante",
-        "autre"
-      ]
-    },
-    "statut": {
-      "enum": [
-        "brouillon",
-        "a-verifier",
-        "verifie"
-      ]
-    },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Nom du genre en minuscules, identique au nom du dossier" },
+    "nom_scientifique": { "type": "string" },
+    "noms_vernaculaires": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "famille": { "type": ["string", "null"] },
+    "type": { "enum": ["arbre", "arbuste", "herbacee", "grimpante", "autre"] },
+    "statut": { "enum": ["brouillon", "a-verifier", "verifie"] },
+    "prefixe_notes": { "type": "string", "pattern": "^[A-Z]{3}$", "description": "Préfixe des notes du dossier de recherche (ex. TIL)" },
     "paris": {
       "type": "object",
-      "description": "Chiffres issus de data/processed/genres_arbres.csv (source : paris-opendata)",
+      "description": "Chiffres issus de data/processed/genres_arbres.csv (source : jeu « Les arbres », Ville de Paris, ODbL)",
       "properties": {
-        "n_arbres": {
-          "type": "integer"
-        },
-        "rang": {
-          "type": "integer"
-        },
-        "rarete": {
-          "enum": [
-            "commune",
-            "peu commune",
-            "rare",
-            "tres rare"
-          ]
-        },
-        "milieux": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "integer"
-          }
-        }
+        "n_arbres": { "type": "integer" },
+        "rang": { "type": "integer" },
+        "rarete": { "enum": ["commune", "peu commune", "rare", "tres rare"] },
+        "milieux": { "type": "object", "additionalProperties": { "type": "integer" } }
       }
     },
     "especes": {
@@ -79,107 +26,59 @@
       "description": "Espèces du genre présentes à Paris, triées par fréquence (ordre indicatif : toutes deviennent accessibles à l'étape « espèces »)",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "nom_scientifique"
-        ],
+        "required": ["id", "nom_scientifique"],
         "properties": {
-          "id": {
-            "type": "string",
-            "description": "id de la fiche espèce (contenu/especes/)"
-          },
-          "nom_scientifique": {
-            "type": "string"
-          },
-          "nom_vernaculaire": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "n_paris": {
-            "type": "integer"
-          },
-          "part_du_genre": {
-            "type": "number"
-          }
+          "id": { "type": "string" },
+          "nom_scientifique": { "type": "string" },
+          "nom_vernaculaire": { "type": ["string", "null"] },
+          "n_paris": { "type": "integer" },
+          "part_du_genre": { "type": "number" }
         }
       }
     },
     "reconnaissance": {
       "type": "object",
-      "description": "Critères par organe ou saison (principal, feuille, ecorce, silhouette, hiver, fleur, fruit…)",
-      "additionalProperties": {
-        "type": "array",
-        "items": {
-          "$ref": "#/$defs/affirmation"
-        }
-      }
+      "description": "Critères par organe ou saison (principal, silhouette, feuille, ecorce, bourgeon, fleur, fruit, hiver, printemps, ete, automne)",
+      "additionalProperties": { "type": "array", "items": { "$ref": "#/$defs/affirmation" } }
     },
     "sosies": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "genre",
-          "comment_distinguer"
-        ],
+        "required": ["genre", "comment_distinguer"],
         "properties": {
-          "genre": {
-            "type": "string",
-            "description": "id du genre (ou de l'espèce) confondu"
-          },
-          "comment_distinguer": {
-            "$ref": "#/$defs/affirmation"
-          }
+          "genre": { "type": "string", "description": "id du genre (ou de l'espèce) confondu" },
+          "comment_distinguer": { "$ref": "#/$defs/affirmation" }
         }
       }
     },
-    "anecdotes": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/affirmation"
+    "phenologie": {
+      "type": "object",
+      "description": "Mois (1-12) de chaque stade observable, sourcés par des notes",
+      "properties": {
+        "notes": { "type": "array", "items": { "$ref": "#/$defs/id_note" } },
+        "feuillage": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 12 } },
+        "floraison": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 12 } },
+        "fructification": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 12 } }
       }
     },
+    "anecdotes": { "type": "array", "items": { "$ref": "#/$defs/affirmation" } },
     "photos": {
       "type": "array",
-      "items": {
-        "$ref": "espece.schema.json#/properties/photos/items"
-      }
-    },
-    "sources": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "espece.schema.json#/$defs/source"
-      }
+      "description": "Identifiants de photos retenues dans photos.md",
+      "items": { "type": "string", "pattern": "^[A-Z]{3}-P\\d{3}$" }
     }
   },
   "$defs": {
+    "id_note": { "type": "string", "pattern": "^[A-Z]{3}-\\d{3}$" },
     "affirmation": {
       "type": "object",
-      "required": [
-        "texte",
-        "sources",
-        "niveau"
-      ],
+      "required": ["texte", "notes", "niveau"],
+      "additionalProperties": false,
       "properties": {
-        "texte": {
-          "type": "string"
-        },
-        "sources": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "minItems": 1
-        },
-        "niveau": {
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 10,
-          "description": "Niveau de recherche à partir duquel l'affirmation s'affiche"
-        }
+        "texte": { "type": "string", "description": "Rédigé avec nos mots pour le jeu" },
+        "notes": { "type": "array", "items": { "$ref": "#/$defs/id_note" }, "minItems": 1, "description": "Notes du dossier de recherche qui justifient le texte" },
+        "niveau": { "type": "integer", "minimum": 1, "maximum": 10, "description": "Niveau de recherche à partir duquel l'affirmation s'affiche" }
       }
     }
   }

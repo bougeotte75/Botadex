@@ -1,0 +1,49 @@
+id: platanus
+nom_scientifique: Platanus
+noms_vernaculaires: ["Platane"]
+famille: null              # à sourcer
+type: arbre
+statut: brouillon
+prefixe_notes: PLA
+paris:                     # source : jeu « Les arbres », Ville de Paris (ODbL) — data/processed/genres_arbres.csv
+  n_arbres: 42573
+  rang: 1
+  rarete: commune
+  milieux: {alignement: 36121, jardin: 2114, cimetiere: 3122, equipement: 1216}
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
+  - id: platanus-x-hispanica
+    nom_scientifique: "Platanus x hispanica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 37965
+    part_du_genre: 0.89
+  - id: platanus-orientalis
+    nom_scientifique: "Platanus orientalis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2453
+    part_du_genre: 0.06
+  - id: platanus-occidentalis
+    nom_scientifique: "Platanus occidentalis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1939
+    part_du_genre: 0.05
+  - id: platanus-acerifolia
+    nom_scientifique: "Platanus acerifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+# Chaque affirmation : texte (nos mots), notes (ids du dossier de recherche), niveau (1 à 10). Ex. :
+#   - texte: "..."
+#     notes: [PLA-001]
+#     niveau: 1
+reconnaissance:
+  principal: []            # niveau 1
+  silhouette: []
+  feuille: []
+  ecorce: []
+  bourgeon: []
+  fleur: []
+  fruit: []
+sosies: []                 # niveau 2
+phenologie: {notes: [], feuillage: [], floraison: [], fructification: []}
+anecdotes: []
+photos: []                 # ids de photos.md (PLA-P001…)

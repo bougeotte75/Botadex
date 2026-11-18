@@ -9,37 +9,197 @@ paris:                     # source : paris-opendata (data/processed/genres_arbr
   rang: 6
   rarete: commune
   milieux: {alignement: 2405, jardin: 4266, cimetiere: 1001, equipement: 1571}
-especes:                   # ordre d'apprentissage = fréquence à Paris
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
   - id: prunus-avium
     nom_scientifique: "Prunus avium"
     nom_vernaculaire: null   # à sourcer
     n_paris: 1745
     part_du_genre: 0.19
-    niveau: 5
   - id: prunus-serrulata
     nom_scientifique: "Prunus serrulata"
     nom_vernaculaire: null   # à sourcer
     n_paris: 1269
     part_du_genre: 0.14
-    niveau: 7
   - id: prunus-cerasifera
     nom_scientifique: "Prunus cerasifera"
     nom_vernaculaire: null   # à sourcer
     n_paris: 883
     part_du_genre: 0.10
-    niveau: 7
   - id: prunus-padus
     nom_scientifique: "Prunus padus"
     nom_vernaculaire: null   # à sourcer
     n_paris: 766
     part_du_genre: 0.08
-    niveau: 9
   - id: prunus-x-subhirtella
     nom_scientifique: "Prunus x subhirtella"
     nom_vernaculaire: null   # à sourcer
     n_paris: 524
     part_du_genre: 0.06
-    niveau: 9
+  - id: prunus-domestica
+    nom_scientifique: "Prunus domestica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 204
+    part_du_genre: 0.02
+  - id: prunus-mahaleb
+    nom_scientifique: "Prunus mahaleb"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 199
+    part_du_genre: 0.02
+  - id: prunus-x-schmittii
+    nom_scientifique: "Prunus x schmittii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 199
+    part_du_genre: 0.02
+  - id: prunus-serrula
+    nom_scientifique: "Prunus serrula"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 185
+    part_du_genre: 0.02
+  - id: prunus-x-yedoensis
+    nom_scientifique: "Prunus x yedoensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 132
+    part_du_genre: 0.01
+  - id: prunus-maackii
+    nom_scientifique: "Prunus maackii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 127
+    part_du_genre: 0.01
+  - id: prunus-laurocerasus
+    nom_scientifique: "Prunus laurocerasus"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 124
+    part_du_genre: 0.01
+  - id: prunus-lusitanica
+    nom_scientifique: "Prunus lusitanica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 124
+    part_du_genre: 0.01
+  - id: prunus-dulcis
+    nom_scientifique: "Prunus dulcis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 109
+    part_du_genre: 0.01
+  - id: prunus-armeniaca
+    nom_scientifique: "Prunus armeniaca"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 104
+    part_du_genre: 0.01
+  - id: prunus-sargentii
+    nom_scientifique: "Prunus sargentii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 93
+    part_du_genre: 0.01
+  - id: prunus-persica
+    nom_scientifique: "Prunus persica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 82
+    part_du_genre: 0.01
+  - id: prunus-x-hillieri
+    nom_scientifique: "Prunus x hillieri"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 79
+    part_du_genre: 0.01
+  - id: prunus-cerasus
+    nom_scientifique: "Prunus cerasus"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 46
+    part_du_genre: 0.00
+  - id: prunus-fleur-n-sp
+    nom_scientifique: "Prunus Fleur n. sp."
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 38
+    part_du_genre: 0.00
+  - id: prunus-spinosa
+    nom_scientifique: "Prunus spinosa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 18
+    part_du_genre: 0.00
+  - id: prunus-fruit-n-sp
+    nom_scientifique: "Prunus Fruit n. sp."
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 11
+    part_du_genre: 0.00
+  - id: prunus-x-blireana
+    nom_scientifique: "Prunus x blireana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 8
+    part_du_genre: 0.00
+  - id: prunus-japonica
+    nom_scientifique: "Prunus japonica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 5
+    part_du_genre: 0.00
+  - id: prunus-davidiana
+    nom_scientifique: "Prunus davidiana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: prunus-serotina
+    nom_scientifique: "Prunus serotina"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: prunus-nigra
+    nom_scientifique: "Prunus nigra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 4
+    part_du_genre: 0.00
+  - id: prunus-incisa
+    nom_scientifique: "Prunus incisa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: prunus-virginiana
+    nom_scientifique: "Prunus virginiana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: prunus-americana
+    nom_scientifique: "Prunus americana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: prunus-pendula
+    nom_scientifique: "Prunus pendula"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: prunus-curdica
+    nom_scientifique: "Prunus curdica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: prunus-glandulosa
+    nom_scientifique: "Prunus glandulosa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: prunus-itosakura
+    nom_scientifique: "Prunus itosakura"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: prunus-mandshurica
+    nom_scientifique: "Prunus mandshurica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: prunus-rufa
+    nom_scientifique: "Prunus rufa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: prunus-x-gondouinii
+    nom_scientifique: "Prunus x gondouinii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: prunus-triloba
+    nom_scientifique: "Prunus triloba"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
 reconnaissance:            # chaque critère : texte, sources, niveau
   principal: []            # niveau 1
   feuille: []

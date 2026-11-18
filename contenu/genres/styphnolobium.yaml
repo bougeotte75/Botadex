@@ -9,13 +9,17 @@ paris:                     # source : paris-opendata (data/processed/genres_arbr
   rang: 5
   rarete: commune
   milieux: {alignement: 8621, jardin: 1559, cimetiere: 971, equipement: 156}
-especes:                   # ordre d'apprentissage = fréquence à Paris
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
   - id: styphnolobium-japonicum
     nom_scientifique: "Styphnolobium japonicum"
     nom_vernaculaire: null   # à sourcer
     n_paris: 10846
     part_du_genre: 0.96
-    niveau: 5
+  - id: styphnolobium-japonica
+    nom_scientifique: "Styphnolobium japonica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
 reconnaissance:            # chaque critère : texte, sources, niveau
   principal: []            # niveau 1
   feuille: []

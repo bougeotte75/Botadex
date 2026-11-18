@@ -9,19 +9,122 @@ paris:                     # source : paris-opendata (data/processed/genres_arbr
   rang: 10
   rarete: commune
   milieux: {alignement: 445, jardin: 4153, cimetiere: 167, equipement: 442}
-especes:                   # ordre d'apprentissage = fréquence à Paris
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
   - id: pinus-nigra
     nom_scientifique: "Pinus nigra"
     nom_vernaculaire: null   # à sourcer
     n_paris: 3786
     part_du_genre: 0.73
-    niveau: 5
   - id: pinus-sylvestris
     nom_scientifique: "Pinus sylvestris"
     nom_vernaculaire: null   # à sourcer
     n_paris: 887
     part_du_genre: 0.17
-    niveau: 7
+  - id: pinus-pinea
+    nom_scientifique: "Pinus pinea"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 111
+    part_du_genre: 0.02
+  - id: pinus-wallichiana
+    nom_scientifique: "Pinus wallichiana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 108
+    part_du_genre: 0.02
+  - id: pinus-mugo
+    nom_scientifique: "Pinus mugo"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 46
+    part_du_genre: 0.01
+  - id: pinus-strobus
+    nom_scientifique: "Pinus strobus"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 43
+    part_du_genre: 0.01
+  - id: pinus-pinaster
+    nom_scientifique: "Pinus pinaster"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 28
+    part_du_genre: 0.01
+  - id: pinus-bungeana
+    nom_scientifique: "Pinus bungeana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 14
+    part_du_genre: 0.00
+  - id: pinus-halepensis
+    nom_scientifique: "Pinus halepensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 5
+    part_du_genre: 0.00
+  - id: pinus-banksiana
+    nom_scientifique: "Pinus banksiana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: pinus-cembra
+    nom_scientifique: "Pinus cembra"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: pinus-coulteri
+    nom_scientifique: "Pinus coulteri"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: pinus-radiata
+    nom_scientifique: "Pinus radiata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: pinus-densiflora
+    nom_scientifique: "Pinus densiflora"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: pinus-contorta
+    nom_scientifique: "Pinus contorta"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: pinus-sabiniana
+    nom_scientifique: "Pinus sabiniana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: pinus-rigida
+    nom_scientifique: "Pinus rigida"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: pinus-ponderosa
+    nom_scientifique: "Pinus ponderosa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: pinus-monophylla
+    nom_scientifique: "Pinus monophylla"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: pinus-parviflora
+    nom_scientifique: "Pinus parviflora"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: pinus-heldreichii
+    nom_scientifique: "Pinus heldreichii"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: pinus-jeffreyi
+    nom_scientifique: "Pinus jeffreyi"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: pinus-tabuliformis
+    nom_scientifique: "Pinus tabuliformis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
 reconnaissance:            # chaque critère : texte, sources, niveau
   principal: []            # niveau 1
   feuille: []

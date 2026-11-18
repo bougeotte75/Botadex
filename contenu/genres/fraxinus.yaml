@@ -9,31 +9,77 @@ paris:                     # source : paris-opendata (data/processed/genres_arbr
   rang: 8
   rarete: commune
   milieux: {alignement: 2722, jardin: 1422, cimetiere: 1998, equipement: 178}
-especes:                   # ordre d'apprentissage = fréquence à Paris
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
   - id: fraxinus-excelsior
     nom_scientifique: "Fraxinus excelsior"
     nom_vernaculaire: null   # à sourcer
     n_paris: 3273
     part_du_genre: 0.52
-    niveau: 5
   - id: fraxinus-ornus
     nom_scientifique: "Fraxinus ornus"
     nom_vernaculaire: null   # à sourcer
     n_paris: 1258
     part_du_genre: 0.20
-    niveau: 7
   - id: fraxinus-angustifolia
     nom_scientifique: "Fraxinus angustifolia"
     nom_vernaculaire: null   # à sourcer
     n_paris: 949
     part_du_genre: 0.15
-    niveau: 7
   - id: fraxinus-americana
     nom_scientifique: "Fraxinus americana"
     nom_vernaculaire: null   # à sourcer
     n_paris: 316
     part_du_genre: 0.05
-    niveau: 9
+  - id: fraxinus-pennsylvanica
+    nom_scientifique: "Fraxinus pennsylvanica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 69
+    part_du_genre: 0.01
+  - id: fraxinus-quadrangulata
+    nom_scientifique: "Fraxinus quadrangulata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 5
+    part_du_genre: 0.00
+  - id: fraxinus-chinensis
+    nom_scientifique: "Fraxinus chinensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: fraxinus-ianuginosa
+    nom_scientifique: "Fraxinus Ianuginosa"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: fraxinus-bungeana
+    nom_scientifique: "Fraxinus bungeana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: fraxinus-mandshurica
+    nom_scientifique: "Fraxinus mandshurica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: fraxinus-sieboldiana
+    nom_scientifique: "Fraxinus sieboldiana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: fraxinus-latifolia
+    nom_scientifique: "Fraxinus latifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: fraxinus-velutina
+    nom_scientifique: "Fraxinus velutina"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: fraxinus-xanthoxyloides
+    nom_scientifique: "Fraxinus xanthoxyloides"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
 reconnaissance:            # chaque critère : texte, sources, niveau
   principal: []            # niveau 1
   feuille: []

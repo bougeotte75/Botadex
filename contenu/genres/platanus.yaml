@@ -9,25 +9,27 @@ paris:                     # source : paris-opendata (data/processed/genres_arbr
   rang: 1
   rarete: commune
   milieux: {alignement: 36121, jardin: 2114, cimetiere: 3122, equipement: 1216}
-especes:                   # ordre d'apprentissage = fréquence à Paris
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
   - id: platanus-x-hispanica
     nom_scientifique: "Platanus x hispanica"
     nom_vernaculaire: null   # à sourcer
     n_paris: 37965
     part_du_genre: 0.89
-    niveau: 5
   - id: platanus-orientalis
     nom_scientifique: "Platanus orientalis"
     nom_vernaculaire: null   # à sourcer
     n_paris: 2453
     part_du_genre: 0.06
-    niveau: 7
   - id: platanus-occidentalis
     nom_scientifique: "Platanus occidentalis"
     nom_vernaculaire: null   # à sourcer
     n_paris: 1939
     part_du_genre: 0.05
-    niveau: 7
+  - id: platanus-acerifolia
+    nom_scientifique: "Platanus acerifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
 reconnaissance:            # chaque critère : texte, sources, niveau
   principal: []            # niveau 1
   feuille: []

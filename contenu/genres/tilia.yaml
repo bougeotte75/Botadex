@@ -9,37 +9,87 @@ paris:                     # source : paris-opendata (data/processed/genres_arbr
   rang: 3
   rarete: commune
   milieux: {alignement: 12704, jardin: 5454, cimetiere: 3301, equipement: 1612}
-especes:                   # ordre d'apprentissage = fréquence à Paris
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
   - id: tilia-tomentosa
     nom_scientifique: "Tilia tomentosa"
     nom_vernaculaire: null   # à sourcer
     n_paris: 7635
     part_du_genre: 0.33
-    niveau: 5
   - id: tilia-cordata
     nom_scientifique: "Tilia cordata"
     nom_vernaculaire: null   # à sourcer
     n_paris: 4187
     part_du_genre: 0.18
-    niveau: 7
   - id: tilia-platyphyllos
     nom_scientifique: "Tilia platyphyllos"
     nom_vernaculaire: null   # à sourcer
     n_paris: 3073
     part_du_genre: 0.13
-    niveau: 7
   - id: tilia-x-euchlora
     nom_scientifique: "Tilia x euchlora"
     nom_vernaculaire: null   # à sourcer
     n_paris: 2686
     part_du_genre: 0.12
-    niveau: 9
   - id: tilia-x-europaea
     nom_scientifique: "Tilia x europaea"
     nom_vernaculaire: null   # à sourcer
     n_paris: 2494
     part_du_genre: 0.11
-    niveau: 9
+  - id: tilia-americana
+    nom_scientifique: "Tilia americana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 462
+    part_du_genre: 0.02
+  - id: tilia-x-flavescens
+    nom_scientifique: "Tilia x flavescens"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 193
+    part_du_genre: 0.01
+  - id: tilia-mongolica
+    nom_scientifique: "Tilia mongolica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 139
+    part_du_genre: 0.01
+  - id: tilia-henryana
+    nom_scientifique: "Tilia henryana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 106
+    part_du_genre: 0.00
+  - id: tilia-dasystyla
+    nom_scientifique: "Tilia dasystyla"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 44
+    part_du_genre: 0.00
+  - id: tilia-miqueliana
+    nom_scientifique: "Tilia miqueliana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: tilia-chinensis
+    nom_scientifique: "Tilia chinensis"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: tilia-oliveri
+    nom_scientifique: "Tilia oliveri"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: tilia-kiusiana
+    nom_scientifique: "Tilia kiusiana"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: tilia-x-flaccida
+    nom_scientifique: "Tilia x flaccida"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 2
+    part_du_genre: 0.00
+  - id: tilia-mandshurica
+    nom_scientifique: "Tilia mandshurica"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
 reconnaissance:            # chaque critère : texte, sources, niveau
   principal: []            # niveau 1
   feuille: []

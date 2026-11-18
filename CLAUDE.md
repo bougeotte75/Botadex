@@ -8,7 +8,9 @@ Langue du projet : **français** (docs, contenu, messages de commit).
 ## Principes
 - **Fiabilité du contenu avant tout.** Chaque affirmation d'une fiche espèce est sourcée (Tela Botanica/eFlore, INPN, Flora Gallica, Sauvages de ma rue…). Les connaissances de Claude ne sont jamais une source. Une fiche n'est `verifie` qu'après recoupement des sources.
 - **Le genre est l'unité d'apprentissage** (décision 0002) : une fiche par genre dans `contenu/genres/<genre>.yaml`, une fiche par espèce enseignée dans `contenu/especes/<nom-scientifique-en-kebab>.yaml`. Les packages (`contenu/packages/<id>/package.yaml`) *listent des genres* ; les espèces s'apprennent dans le genre via le niveau de recherche (`docs/mecaniques/niveau-de-recherche.md`).
-- Chaque affirmation d'une fiche genre porte un `niveau` de déblocage (1 à 10).
+- Chaque affirmation d'une fiche genre porte un `niveau` de déblocage (1 à 10). Les espèces n'ont pas de niveau : à l'étape « espèces » (niveau 5), toutes sont accessibles ; la rareté ne joue que sur les points de capture.
+- **Botadex est un jeu d'extérieur** : le terrain (captures) rapporte l'essentiel des points. Les tâches saisonnières imposent de jouer sur l'année (`docs/mecaniques/calendrier.md`).
+- Web app = prototype de développement ; premier test avec de vrais testeurs sur app mobile.
 - **Licences** : chaque photo et chaque source porte sa licence et un champ `usage_commercial` (oui/non). Pas de contenu « NC » dans un package payant.
 - **Mécaniques de jeu = expériences** : chaque fiche dans `docs/mecaniques/` suit le modèle hypothèse / règles / test / résultats.
 - **Données brutes** dans `data/raw/` (ignoré par git). Tout ce qui est dérivé est reproductible via `scripts/` et rangé dans `data/processed/`.
@@ -19,7 +21,7 @@ Langue du projet : **français** (docs, contenu, messages de commit).
 - [x] Squelette du repo
 - [x] Import et analyse du jeu « Les arbres » (Paris Open Data) → `scripts/import_arbres.py`, comptages dans `data/processed/` ; carte d'exploration `app/carte/` (`scripts/export_carte.py`)
 - [x] Package « Arbres communs » : 16 genres ; squelettes des fiches genres générés (`scripts/generer_fiches_genres.py`)
-- [x] Mécanique « Niveau de recherche par genre » spécifiée
+- [x] Mécanique « Niveau de recherche par genre » spécifiée (v2 : terrain dominant, espèces non conditionnées par la rareté, tâches saisonnières) ; idée « Calendrier botanique »
 - [ ] Rédiger et sourcer les fiches genres (critères, sosies, anecdotes, photos)
 - [ ] Spécifier les autres mécaniques (répétition espacée, quiz de sosies, capture terrain)
 - [ ] POC web app
@@ -28,3 +30,4 @@ Langue du projet : **français** (docs, contenu, messages de commit).
 - Chaîne de données : `python scripts/import_arbres.py` puis `python scripts/export_carte.py` (pandas requis).
 - Résultat clé : 16 genres = 80 % des arbres recensés (Platane, Marronnier, Tilleul, Érable, Sophora…).
 - opendata.paris.fr coupe les connexions depuis l'environnement cloud de Claude : le CSV « Les arbres » est téléchargé en local par l'utilisatrice et placé dans `data/raw/`.
+- Les idées pas encore spécifiées vivent dans le doc « Botadex — pistes d'idées » (claude.ai, Claude Docs), avant de devenir des fiches de mécanique ou des tickets.

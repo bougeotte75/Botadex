@@ -10,10 +10,10 @@ Première idée écartée : un package « Arbres communs » par genre, puis un p
 ## Décision
 - L'unité d'apprentissage est le **genre**. Les espèces s'apprennent **à l'intérieur du genre**, au fil d'un niveau de recherche (voir `docs/mecaniques/niveau-de-recherche.md`).
 - **Les packages élargissent** (plus de genres, d'autres milieux) ; **les niveaux approfondissent** (du genre vers les espèces).
-- Nouvelle fiche **genre** dans `contenu/genres/<genre>.yaml` : critères généraux, sosies, liste ordonnée des espèces, contenu étiqueté par niveau de déblocage. Les fiches espèces (`contenu/especes/`) restent la source de vérité pour chaque espèce.
+- Nouvelle fiche **genre** dans `contenu/genres/<genre>.yaml` : critères généraux, sosies, liste des espèces présentes à Paris, contenu étiqueté par niveau de déblocage. Les fiches espèces (`contenu/especes/`) restent la source de vérité pour chaque espèce.
 - Les packages listent des **genres** (`schema/package.schema.json`).
 
 ## Conséquences
 - Le package « Arbres communs » = les 16 genres « communs » de l'analyse.
-- L'ordre d'apprentissage des espèces d'un genre suit leur fréquence à Paris.
-- Les fiches espèces ne sont nécessaires que pour les espèces enseignées (niveau ≥ 5).
+- Deux étapes : le genre (niveaux 1 à 4), puis les espèces (niveau 5 et plus). À l'étape « espèces », **toutes** les espèces du genre sont accessibles : on apprend celles qu'on rencontre. La rareté ne joue que sur les points de capture.
+- Il faudra une fiche pour chaque espèce présente à Paris dans les genres d'un package (y compris les rares), en commençant par les plus fréquentes.

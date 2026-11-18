@@ -9,13 +9,27 @@ paris:                     # source : paris-opendata (data/processed/genres_arbr
   rang: 16
   rarete: commune
   milieux: {alignement: 9, jardin: 2138, cimetiere: 500, equipement: 162}
-especes:                   # ordre d'apprentissage = fréquence à Paris
+especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)
   - id: taxus-baccata
     nom_scientifique: "Taxus baccata"
     nom_vernaculaire: null   # à sourcer
     n_paris: 2779
     part_du_genre: 0.99
-    niveau: 5
+  - id: taxus-x-media
+    nom_scientifique: "Taxus x media"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 3
+    part_du_genre: 0.00
+  - id: taxus-brevifolia
+    nom_scientifique: "Taxus brevifolia"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
+  - id: taxus-cuspidata
+    nom_scientifique: "Taxus cuspidata"
+    nom_vernaculaire: null   # à sourcer
+    n_paris: 1
+    part_du_genre: 0.00
 reconnaissance:            # chaque critère : texte, sources, niveau
   principal: []            # niveau 1
   feuille: []

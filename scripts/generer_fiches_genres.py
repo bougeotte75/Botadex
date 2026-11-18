@@ -16,9 +16,7 @@ RACINE = Path(__file__).resolve().parents[1]
 PROC = RACINE / "data" / "processed"
 GENRES = RACINE / "contenu" / "genres"
 
-PART_MIN = 0.03        # une espèce est enseignée si elle pèse au moins 3 % du genre à Paris
-NB_MAX_ESPECES = 6
-NIVEAUX_ESPECES = [5, 7, 7, 9, 9, 9]   # niveau de recherche auquel chaque espèce (par rang) est enseignée
+PART_MIN = 0          # toutes les espèces du genre présentes à Paris (décision : pas de filtre par rareté)
 ESPECES_IGNOREES = {"sp.", "n. sp.", "?"}
 # Le libellé du jeu de données est parfois celui d'une espèce ou d'un usage (« Noisetier de Byzance », « Pommier à fruits ») :
 # on retient un nom de genre générique, à valider.
@@ -51,7 +49,7 @@ def fiche(g: pd.Series, especes: pd.DataFrame) -> str:
         f"  rang: {int(g.rang)}",
         f"  rarete: {g.rarete}",
         "  milieux: {" + ", ".join(f"{k}: {v}" for k, v in milieux.items()) + "}",
-        "especes:                   # ordre d'apprentissage = fréquence à Paris",
+        "especes:                   # toutes les espèces présentes à Paris, par fréquence (ordre indicatif)",
     ]
     if especes.empty:
         lignes[-1] = "especes: []  # aucune espèce ne dépasse le seuil : à décider"
@@ -63,7 +61,6 @@ def fiche(g: pd.Series, especes: pd.DataFrame) -> str:
             "    nom_vernaculaire: null   # à sourcer",
             f"    n_paris: {int(e.n_total)}",
             f"    part_du_genre: {e.part_genre:.2f}",
-            f"    niveau: {NIVEAUX_ESPECES[i]}",
         ]
     lignes += [
         "reconnaissance:            # chaque critère : texte, sources, niveau",
@@ -102,7 +99,7 @@ def main() -> None:
         g = pd.Series(g._asdict())
         t = taxons[(taxons["genre"] == g.genre) & ~taxons["espece"].isin(ESPECES_IGNOREES)].copy()
         t["part_genre"] = t["n_total"] / g.n_total
-        t = t[t["part_genre"] >= PART_MIN].sort_values("n_total", ascending=False).head(NB_MAX_ESPECES)
+        t = t[t["part_genre"] >= PART_MIN].sort_values("n_total", ascending=False)
         chemin = GENRES / f"{kebab(g.genre)}.yaml"
         ids.append(kebab(g.genre))
         if chemin.exists():
